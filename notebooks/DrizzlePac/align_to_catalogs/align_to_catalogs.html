@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Aligning HST images to an Absolute Reference Catalog &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs';</script>
@@ -156,17 +151,22 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../../_static/stsci_logo2.png" class="logo__image only-light" alt="HST Notebooks - Home"/>
-    <script>document.write(`<img src="../../../_static/stsci_logo2.png" class="logo__image only-dark" alt="HST Notebooks - Home"/>`);</script>
   
+    <p class="title logo__title">HST Notebooks</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -179,18 +179,17 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">ACS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/README.html">ACS Notebooks</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_findsat_mrt/acs_findsat_mrt_example.html">Satellite trail detection in ACS/WFC data using acstools.findsat_mrt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_saturation_trails/acs_saturation_trails.html">ACS Linearity with Saturated Stars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_cte_forward_model/acs_cte_forward_model_example.html">Pixel-based ACS/WFC CTE Forward Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_subarrays/acs_subarrays.html">ACS Image Reduction for Subarray Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_sbc_dark_analysis/acs_sbc_dark_analysis.html">SBC Dark Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_reduction/acs_reduction.html">ACS/WFC Image Reduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_pixel_area_maps/acs_pixel_area_maps.html">Obtaining Pixel Area Maps for ACS Data</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_pixel_area_maps/acs_pixel_area_maps.html">ACS Pixel Area Maps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_polarization_tools/acs_polarization_tools.html">Using ACS Polarization Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_focus_diverse_epsfs/acs_focus_diverse_epsfs.html">Focus Diverse ePSFs for ACS/WFC</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/hst_orbits_ephem/hst_orbits_ephem.html">Getting HST Ephemeris and Related Data for an Observation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">COS</span></p>
 <ul class="nav bd-sidenav">
@@ -265,10 +264,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../align_mosaics/align_mosaics.html">Aligning HST Mosaics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sky_matching/sky_matching.html">Sky Matching for HST Mosaics <a id="top"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mask_satellite/mask_satellite.html">Satellite Trail Masking Techniques</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../drizzle_wfpc2/drizzle_wfpc2.html">Drizzling new WFPC2 FLT data products with chip-normalization   </a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drizzle_wfpc2/drizzle_wfpc2.html">Drizzling new WFPC2 FLT data products with chip-normalization</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/README.html">HASP Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
 
@@ -282,18 +282,27 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
 
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/Intro/Intro.html">Introduction to the HSLA Data Products and Tools</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/Setup/Setup.html">Installing the HASP/HSLA Spectral-Combination Script</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../NICMOS/nicmos_unit_conversion/nicmos_unit_conversion.html">Programmatic Replacements for NICMOS Units Conversion Form</a></li>
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">STIS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../STIS/README.html">STIS-Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../STIS/README.html">STIS Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/cross-correlation/cross-correlation.html">Correcting for Missing Wavecals with Cross-Correlation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/custom_ccd_darks/custom_ccd_darks.html">Custom CCD Darks <a class="tocSkip"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/drizpac_notebook/STIS_DrizzlePac_Tutorial.html">STIS DrizzlePac Tutorial <a class="tocSkip"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/CoronagraphyViz/STIS_Coronagraphy_Visualization_v2.html">STIS Coronagraphy Visualization Tool (v2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../STIS/calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../STIS/calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/target_acquisition/target_acquisition.html">Evaluating STIS Target Acquisitions <a class="tocSkip"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/view_data/view_data.html">Viewing STIS Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../STIS/extraction/1D_Extraction.html">1D Spectra Extraction <a class="tocSkip"></a></a></li>
@@ -362,9 +371,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -389,14 +398,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -554,9 +563,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -616,36 +625,37 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id="top"></a></p>
+  <p><img alt="STScI Logo" src="_static/stsci_header.png" /></p>
+<p><a id="top"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="aligning-hst-images-to-an-absolute-reference-catalog">
-<h1>Aligning HST images to an Absolute Reference Catalog<a class="headerlink" href="#aligning-hst-images-to-an-absolute-reference-catalog" title="Permalink to this heading">#</a></h1>
+<h1>Aligning HST images to an Absolute Reference Catalog<a class="headerlink" href="#aligning-hst-images-to-an-absolute-reference-catalog" title="Link to this heading">#</a></h1>
 <div class="alert alert-block alert-warning" style="color:black" > <b> This notebook requires creating and activating a virtual environment using the requirements file in this notebook's repository. Please also review the README file before using the notebook.</b> <br> </div>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
 <p><a id="toc"></a></p>
-<p><span class="xref myst">Introduction</span> <br>
-<span class="xref myst">Import Packages</span> <br></p>
-<p><span class="xref myst">1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></span> <br>
-    <span class="xref myst">1.1 Check image header data</span> <br>
-    <span class="xref myst">1.2 Inspect the alignment</span> <br></p>
-<p><span class="xref myst">2. Query the Reference Catalogs</span> <br>
-    <span class="xref myst">2.1 Identify Coordinates</span> <br>
-    <span class="xref myst">2.2 SDSS Query</span> <br>
-    <span class="xref myst">2.3 Gaia Query</span> <br></p>
-<p><span class="xref myst">3. Align images with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code></span> <br>
-    <span class="xref myst">3.1 SDSS Alignment</span> <br>
-    <span class="xref myst">3.2 Inspect the shift file and fit residuals</span> <br>
-    <span class="xref myst">3.3 Gaia Alignment</span> <br>
-    <span class="xref myst">3.4 Inspect the shift file and fit residuals</span> <br>
-    <span class="xref myst">3.5 Overplot Matched Sources on the image</span> <br>
-    <span class="xref myst">3.6 Update header with optimal parameters</span> <br></p>
-<p><span class="xref myst">4. Combine the images using <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code></span> <br></p>
-<p><span class="xref myst">Conclusions</span> <br>
-<span class="xref myst">About this Notebook</span> <br></p>
+<p><a class="reference internal" href="#intro"><span class="xref myst">Introduction</span></a> <br>
+<a class="reference internal" href="#import"><span class="xref myst">Import Packages</span></a> <br></p>
+<p><a class="reference internal" href="#download"><span class="xref myst">1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></span></a> <br>
+    <a class="reference internal" href="#check_keywords"><span class="xref myst">1.1 Check image header data</span></a> <br>
+    <a class="reference internal" href="#check_wcs"><span class="xref myst">1.2 Inspect the alignment</span></a> <br></p>
+<p><a class="reference internal" href="#query"><span class="xref myst">2. Query the Reference Catalogs</span></a> <br>
+    <a class="reference internal" href="#coords"><span class="xref myst">2.1 Identify Coordinates</span></a> <br>
+    <a class="reference internal" href="#sdss_query"><span class="xref myst">2.2 SDSS Query</span></a> <br>
+    <a class="reference internal" href="#gaia_query"><span class="xref myst">2.3 Gaia Query</span></a> <br></p>
+<p><a class="reference internal" href="#tweakreg"><span class="xref myst">3. Align images with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code></span></a> <br>
+    <a class="reference internal" href="#sdss_align"><span class="xref myst">3.1 SDSS Alignment</span></a> <br>
+    <a class="reference internal" href="#fit_quality_sdss"><span class="xref myst">3.2 Inspect the shift file and fit residuals</span></a> <br>
+    <a class="reference internal" href="#gaia_align"><span class="xref myst">3.3 Gaia Alignment</span></a> <br>
+    <a class="reference internal" href="#fit_quality_gaia"><span class="xref myst">3.4 Inspect the shift file and fit residuals</span></a> <br>
+    <a class="reference internal" href="#overplot"><span class="xref myst">3.5 Overplot Matched Sources on the image</span></a> <br>
+    <a class="reference internal" href="#updatehdr"><span class="xref myst">3.6 Update header with optimal parameters</span></a> <br></p>
+<p><a class="reference internal" href="#adriz"><span class="xref myst">4. Combine the images using <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code></span></a> <br></p>
+<p><a class="reference internal" href="#conclude"><span class="xref myst">Conclusions</span></a> <br>
+<a class="reference internal" href="#about"><span class="xref myst">About this Notebook</span></a> <br></p>
 <p><a id="intro"></a></p>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The alignment of HST exposures is a critical step in image stacking or combination performed with software such as <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code>.  Generally, a <em>relative</em> alignment is performed to align one or multiple images to another image that is designated as the reference image. The reference image is generally the deepest exposure and/or that covering the largest area of all the exposures.  This process aligns the images to each other, but the pointing error of the observatory can still cause the images to have incorrect <em>absolute</em> astrometry. When absolute astrometry is desired, the images can be aligned to an external catalog with an absolute world coordinate system (WCS). In this example, we will provide a workflow to query catalogs such as SDSS and Gaia using the astroquery package, and then align the images to that catalog using TweakReg.</p>
 <p>The workflow in this notebook for aligning images to <a class="reference external" href="https://www.cosmos.esa.int/web/gaia/home">Gaia</a> is based on <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/wfc3/documentation/instrument-science-reports-isrs/_documents/2017/WFC3-2017-19.pdf">WFC3 ISR 2017-19: Aligning HST Images to Gaia: a Faster Mosaicking Workflow</a> and contains a subset of the information and code found in <a class="reference external" href="https://github.com/spacetelescope/gaia_alignment">this repository</a>.  For more information, see the notebook in that repository titled <a class="reference external" href="https://github.com/spacetelescope/gaia_alignment/blob/master/Gaia_alignment.ipynb">Gaia_alignment.ipynb</a>.</p>
 <p>For more information about TweakReg, see the other notebooks in this repository or the <a class="reference external" href="https://drizzlepac.readthedocs.io/en/latest/user_reprocessing/tweakreg_api.html">TweakReg Documentation</a>.</p>
@@ -653,9 +663,9 @@ document.write(`
 <p><a id="import"></a></p>
 </section>
 <section id="import-packages">
-<h2>Import Packages<a class="headerlink" href="#import-packages" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
-<hr class="docutils" />
+<h2>Import Packages<a class="headerlink" href="#import-packages" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
+<hr>
 <p>The following Python packages are required to run the Jupyter Notebook:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.python.org/3/library/os.html"><strong>os</strong></a> - change and make directories</p></li>
@@ -700,38 +710,22 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
-                                    skymatch                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the drizzlepac package can be run with TEAL:
-    astrodrizzle       config_testbed      imagefindpars           mapreg       
-       photeq            pixreplace           pixtopix            pixtosky      
-  refimagefindpars       resetbits          runastrodriz          skytopix      
-     tweakback            tweakreg           updatenpol
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id="download"></a></p>
 </section>
 <section id="download-the-observations-with-astroquery">
-<h2>1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#download-the-observations-with-astroquery" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#download-the-observations-with-astroquery" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>For this notebook, we will download WFC3/UVIS images of NGC 6791 from
-program <a class="reference external" href="http://www.stsci.edu/cgi-bin/get-proposal-info?id=12692&amp;observatory=HST">12692</a>
+program <a class="reference external" href="https://www.stsci.edu/hst-program-info/program/?program=12692">12692</a>
 in the F606W filter acquired in Visit 01. The three FLC images have been processed by the HST WFC3 pipeline (calwf3), which includes bias subtraction, dark current and CTE correction, cosmic-ray rejection, and flat-fielding:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        ibwb01xqq_flc.fits
         ibwb01xrq_flc.fits
         ibwb01xxq_flc.fits
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/latest/mast/mast_obsquery.html#observation-criteria-queries"> <code class="docutils literal notranslate"><span class="pre">query_criteria</span></code></a>, where we specify: <br></p>
+<hr>
+MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/latest/mast/mast_obsquery.html#observation-criteria-queries"> `query_criteria`</a>, where we specify: <br>
 <p>    <span class="math notranslate nohighlight">\(\rightarrow\)</span> obs_id, proposal_id, and filters</p>
 <p>MAST data products may be downloaded by using <a href="https://astroquery.readthedocs.io/en/latest/mast/mast_obsquery.html#downloading-data"> <code class="docutils literal notranslate"><span class="pre">download_products</span></code></a>, where we specify:<br></p>
 <p>    <span class="math notranslate nohighlight">\(\rightarrow\)</span> products = calibrated (FLT, FLC) or drizzled (DRZ, DRC) files</p>
@@ -772,7 +766,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </pre></div>
 </div>
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743554258768" class="table-striped table-bordered table-condensed">
+<table id="table140547498455120" class="table-striped table-bordered table-condensed">
 <thead><tr><th>Local Path</th><th>Status</th><th>Message</th><th>URL</th></tr></thead>
 <thead><tr><th>str47</th><th>str8</th><th>object</th><th>object</th></tr></thead>
 <tr><td>./mastDownload/HST/ibwb01xqq/ibwb01xqq_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
@@ -795,7 +789,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 <p><a id="check_keywords"></a></p>
 <section id="check-image-header-data">
-<h3>1.1 Check image header data<a class="headerlink" href="#check-image-header-data" title="Permalink to this heading">#</a></h3>
+<h3>1.1 Check image header data<a class="headerlink" href="#check-image-header-data" title="Link to this heading">#</a></h3>
 <p>The cell below retrieves values for specific keywords from the first and second extensions of the image header. We see that the 1st exposure is 30 seconds and the 2nd and 3rd exposures are 360 seconds in duration. The 3rd exposure is dithered by approximately 82 arcseconds in the y-direction which is approximately the width of one WFC3 UVIS detector chip. A full list of header keywords is available in <a class="reference external" href="https://hst-docs.stsci.edu/wfc3dhb/chapter-2-wfc3-data-structure/2-4-headers-and-keywords">Section 2.4</a> of the WFC3 Data Handbook.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -825,7 +819,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743560288592" class="table-striped table-bordered table-condensed">
+<table id="table140547543116560" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ROOTNAME</th><th>ASN_ID</th><th>TARGNAME</th><th>DETECTOR</th><th>FILTER</th><th>exptime</th><th>ra_targ</th><th>dec_targ</th><th>postarg1</th><th>postarg2</th><th>DATE-OBS</th><th>orientat</th></tr></thead>
 <thead><tr><th>str32</th><th>str32</th><th>str32</th><th>str32</th><th>str32</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>str32</th><th>float64</th></tr></thead>
 <tr><td>ibwb01xqq</td><td>NONE</td><td>NGC-6791</td><td>UVIS</td><td>F606W</td><td>30.0</td><td>290.2248</td><td>37.8027</td><td>0.000</td><td>0.000</td><td>2011-10-20</td><td>-56.27</td></tr>
@@ -836,7 +830,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <p><a id="check_wcs"></a></p>
 </section>
 <section id="inspect-the-alignment">
-<h3>1.2 Inspect the Alignment<a class="headerlink" href="#inspect-the-alignment" title="Permalink to this heading">#</a></h3>
+<h3>1.2 Inspect the Alignment<a class="headerlink" href="#inspect-the-alignment" title="Link to this heading">#</a></h3>
 <p>Check the active WCS solution in the image header. If the image is aligned to a catalog, the list the number of matches and the fit RMS in milli-arcseconds. Next, convert the fit RMS values to pixels for comparison with the alignment results performed later in this notebook using <code class="docutils literal notranslate"><span class="pre">Tweakreg</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -878,24 +872,24 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743545333264" class="table-striped table-bordered table-condensed">
+<table id="table140547476700496" class="table-striped table-bordered table-condensed">
 <thead><tr><th>filename</th><th>DETECTOR</th><th>EXPTIME</th><th>WCSNAME</th><th>NMATCHES</th><th>RMS_RA</th><th>RMS_DEC</th><th>RMS_RA_pix</th><th>RMS_DEC_pix</th></tr></thead>
 <thead><tr><th>str18</th><th>str4</th><th>float64</th><th>str30</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>ibwb01xqq_flc.fits</td><td>UVIS</td><td>30.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>442</td><td>1.3</td><td>1.5</td><td>0.03</td><td>0.04</td></tr>
-<tr><td>ibwb01xrq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>462</td><td>4.0</td><td>3.8</td><td>0.1</td><td>0.1</td></tr>
-<tr><td>ibwb01xxq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>429</td><td>3.9</td><td>3.7</td><td>0.1</td><td>0.09</td></tr>
+<tr><td>ibwb01xqq_flc.fits</td><td>UVIS</td><td>30.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>435</td><td>2.4</td><td>2.3</td><td>0.06</td><td>0.06</td></tr>
+<tr><td>ibwb01xrq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>456</td><td>3.6</td><td>3.2</td><td>0.09</td><td>0.08</td></tr>
+<tr><td>ibwb01xxq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>429</td><td>3.9</td><td>3.8</td><td>0.1</td><td>0.1</td></tr>
 </table></div></div></div>
 </div>
 <p><a id="query"></a></p>
 </section>
 </section>
 <section id="query-the-reference-catalogs">
-<h2>2. Query the Reference Catalogs<a class="headerlink" href="#query-the-reference-catalogs" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>2. Query the Reference Catalogs<a class="headerlink" href="#query-the-reference-catalogs" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>Now that we have the FITS images, we will download the reference catalogs from both SDSS and Gaia using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>.</p>
 <p><a id="coords"></a></p>
 <section id="identify-coordinates">
-<h3>2.1 Identify Coordinates<a class="headerlink" href="#identify-coordinates" title="Permalink to this heading">#</a></h3>
+<h3>2.1 Identify Coordinates<a class="headerlink" href="#identify-coordinates" title="Link to this heading">#</a></h3>
 <p>We will first create a SkyCoord Object to point astroquery to where we are looking on the sky.  Since our example uses data from NGC 6791, we will use the <code class="docutils literal notranslate"><span class="pre">ra_targ</span></code> and <code class="docutils literal notranslate"><span class="pre">dec_targ</span></code> keywords from the first image to get the coordinates of the object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -908,27 +902,27 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <p><a id="sdss_query"></a></p>
 </section>
 <section id="sdss-query">
-<h3>2.2 SDSS Query<a class="headerlink" href="#sdss-query" title="Permalink to this heading">#</a></h3>
-<p>We now give the RA and Dec values to an astropy <code class="docutils literal notranslate"><span class="pre">SkyCoord</span></code> object, which we will pass to the SDSS query.  Additionally, we use an astropy <code class="docutils literal notranslate"><span class="pre">Quantity</span></code> object to create a radius for the SDSS query in physical units.  We set the radius to 5 arcminutes to comfortably cover the area of our images. For reference, the UVIS detector field of view is approximately 2.7’<span class="math notranslate nohighlight">\(\times\)</span>2.7’ and a y-dither of 82 arcseconds covers a total area on the sky of approximately 2.7’<span class="math notranslate nohighlight">\(\times\)</span>4.1’.</p>
+<h3>2.2 SDSS Query<a class="headerlink" href="#sdss-query" title="Link to this heading">#</a></h3>
+<p>We now give the RA and Dec values to an astropy <code class="docutils literal notranslate"><span class="pre">SkyCoord</span></code> object, which we will pass to the SDSS query.  Additionally, we use an astropy <code class="docutils literal notranslate"><span class="pre">Quantity</span></code> object to create a radius for the SDSS query in physical units. For reference, the UVIS detector field of view is approximately 2.7’<span class="math notranslate nohighlight">\(\times\)</span>2.7’ and a y-dither of 82 arcseconds covers a total area on the sky of approximately 2.7’<span class="math notranslate nohighlight">\(\times\)</span>4.1’. For SDSS the maximum search radius is 3 arcminutes, which covers the majority of our field of view in this example. In the Gaia query, we set the radius to 5 arcminutes to fully cover the area of our observations.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coord</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">ra</span><span class="o">=</span><span class="n">RA</span><span class="p">,</span> <span class="n">dec</span><span class="o">=</span><span class="n">Dec</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">))</span>
-<span class="n">radius</span> <span class="o">=</span> <span class="n">Quantity</span><span class="p">(</span><span class="mf">3.</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">arcmin</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Next, we perform the query via the <code class="docutils literal notranslate"><span class="pre">SDSS.query_region</span></code> method of <code class="docutils literal notranslate"><span class="pre">astroquery.sdss</span></code>. The <code class="docutils literal notranslate"><span class="pre">spectro=False</span></code> keyword argument means we want to exclude spectroscopic objects, as we are looking for objects to match with an image. In the fields parameter, we specify a list of fields we want returned by the query. In this case we only need the position, as well as a <em>g</em>-band magnitude if we want to remove very dim and/or bright objects from the catalog, as those are likely measured poorly. Details on selecting objects by magnitude may be found in the <a class="reference external" href="https://github.com/spacetelescope/gaia_alignment">‘Gaia_alignment’ notebook</a>. Many other fields are available in the SDSS query and are <a class="reference external" href="http://cas.sdss.org/dr7/en/help/browser/description.asp?n=PhotoObj&amp;t=V">documented on this webpage</a>.</p>
+<p>Next, we perform the query via the <code class="docutils literal notranslate"><span class="pre">SDSS.query_region</span></code> method of <code class="docutils literal notranslate"><span class="pre">astroquery.sdss</span></code>. The <code class="docutils literal notranslate"><span class="pre">spectro=False</span></code> keyword argument means we want to exclude spectroscopic objects, as we are looking for objects to match with an image. In the fields parameter, we specify a list of fields we want returned by the query. In this case we only need the position, as well as a <em>g</em>-band magnitude if we want to remove very dim and/or bright objects from the catalog, as those are likely measured poorly. Details on selecting objects by magnitude may be found in the <a class="reference external" href="https://github.com/spacetelescope/gaia_alignment">‘Gaia_alignment’ notebook</a>. Many other fields are available in the <code class="docutils literal notranslate"><span class="pre">SDSS.query_region</span></code> function, which are <a class="reference external" href="https://astroquery.readthedocs.io/en/latest/api/astroquery.sdss.SDSSClass.html#astroquery.sdss.SDSSClass.query_region">documented on this webpage</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sdss_query</span> <span class="o">=</span> <span class="n">SDSS</span><span class="o">.</span><span class="n">query_region</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span> <span class="n">spectro</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">,</span> <span class="s1">&#39;dec&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">radius</span> <span class="o">=</span> <span class="n">Quantity</span><span class="p">(</span><span class="mf">3.</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">arcmin</span><span class="p">)</span>
+<span class="n">sdss_query</span> <span class="o">=</span> <span class="n">SDSS</span><span class="o">.</span><span class="n">query_region</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span> <span class="n">spectro</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">,</span> <span class="s1">&#39;dec&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">])</span>
 <span class="n">sdss_query</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=2140</i>
-<table id="table139743544642000" class="table-striped table-bordered table-condensed">
+<table id="table140548921085200" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ra</th><th>dec</th><th>g</th></tr></thead>
 <thead><tr><th>float64</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>290.175257483306</td><td>37.7757023742629</td><td>19.10387</td></tr>
@@ -964,11 +958,12 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <p><a id="gaia_query"></a></p>
 </section>
 <section id="gaia-query">
-<h3>2.3 Gaia Query<a class="headerlink" href="#gaia-query" title="Permalink to this heading">#</a></h3>
-<p>Similarly to SDSS, we can query Gaia catalogs for our target via <code class="docutils literal notranslate"><span class="pre">astroquery.gaia</span></code>. This may be preferable in many cases because the spaced-based astrometry from Gaia is generally very accurate and precise. We can use the same <code class="docutils literal notranslate"><span class="pre">coord</span></code> and  <code class="docutils literal notranslate"><span class="pre">radius</span></code> search parameters from our earlier SDSS query.</p>
+<h3>2.3 Gaia Query<a class="headerlink" href="#gaia-query" title="Link to this heading">#</a></h3>
+<p>Similarly to SDSS, we can query Gaia catalogs for our target via <code class="docutils literal notranslate"><span class="pre">astroquery.gaia</span></code>. This may be preferable in many cases because the spaced-based astrometry from Gaia is generally very accurate and precise. We can use the same <code class="docutils literal notranslate"><span class="pre">coord</span></code> search parameters from our earlier SDSS query, along with a slightly larger  <code class="docutils literal notranslate"><span class="pre">radius</span></code> that encompasses the full field of view of these observations.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gaia_query</span> <span class="o">=</span> <span class="n">Gaia</span><span class="o">.</span><span class="n">query_object_async</span><span class="p">(</span><span class="n">coordinate</span><span class="o">=</span><span class="n">coord</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">radius</span> <span class="o">=</span> <span class="n">Quantity</span><span class="p">(</span><span class="mf">5.</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">arcmin</span><span class="p">)</span>
+<span class="n">gaia_query</span> <span class="o">=</span> <span class="n">Gaia</span><span class="o">.</span><span class="n">query_object_async</span><span class="p">(</span><span class="n">coordinate</span><span class="o">=</span><span class="n">coord</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">)</span>
 <span class="n">gaia_query</span>
 </pre></div>
 </div>
@@ -977,8 +972,8 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Query finished. [astroquery.utils.tap.core]
 </pre></div>
 </div>
-<div class="output text_html"><div><i>Table length=2331</i>
-<table id="table139744024319824" class="table-striped table-bordered table-condensed">
+<div class="output text_html"><div><i>Table length=4865</i>
+<table id="table140547857565712" class="table-striped table-bordered table-condensed">
 <thead><tr><th>solution_id</th><th>DESIGNATION</th><th>SOURCE_ID</th><th>random_index</th><th>ref_epoch</th><th>ra</th><th>ra_error</th><th>dec</th><th>dec_error</th><th>parallax</th><th>parallax_error</th><th>parallax_over_error</th><th>pm</th><th>pmra</th><th>pmra_error</th><th>pmdec</th><th>pmdec_error</th><th>ra_dec_corr</th><th>ra_parallax_corr</th><th>ra_pmra_corr</th><th>ra_pmdec_corr</th><th>dec_parallax_corr</th><th>dec_pmra_corr</th><th>dec_pmdec_corr</th><th>parallax_pmra_corr</th><th>parallax_pmdec_corr</th><th>pmra_pmdec_corr</th><th>astrometric_n_obs_al</th><th>astrometric_n_obs_ac</th><th>astrometric_n_good_obs_al</th><th>astrometric_n_bad_obs_al</th><th>astrometric_gof_al</th><th>astrometric_chi2_al</th><th>astrometric_excess_noise</th><th>astrometric_excess_noise_sig</th><th>astrometric_params_solved</th><th>astrometric_primary_flag</th><th>nu_eff_used_in_astrometry</th><th>pseudocolour</th><th>pseudocolour_error</th><th>ra_pseudocolour_corr</th><th>dec_pseudocolour_corr</th><th>parallax_pseudocolour_corr</th><th>pmra_pseudocolour_corr</th><th>pmdec_pseudocolour_corr</th><th>astrometric_matched_transits</th><th>visibility_periods_used</th><th>astrometric_sigma5d_max</th><th>matched_transits</th><th>new_matched_transits</th><th>matched_transits_removed</th><th>ipd_gof_harmonic_amplitude</th><th>ipd_gof_harmonic_phase</th><th>ipd_frac_multi_peak</th><th>ipd_frac_odd_win</th><th>ruwe</th><th>scan_direction_strength_k1</th><th>scan_direction_strength_k2</th><th>scan_direction_strength_k3</th><th>scan_direction_strength_k4</th><th>scan_direction_mean_k1</th><th>scan_direction_mean_k2</th><th>scan_direction_mean_k3</th><th>scan_direction_mean_k4</th><th>duplicated_source</th><th>phot_g_n_obs</th><th>phot_g_mean_flux</th><th>phot_g_mean_flux_error</th><th>phot_g_mean_flux_over_error</th><th>phot_g_mean_mag</th><th>phot_bp_n_obs</th><th>phot_bp_mean_flux</th><th>phot_bp_mean_flux_error</th><th>phot_bp_mean_flux_over_error</th><th>phot_bp_mean_mag</th><th>phot_rp_n_obs</th><th>phot_rp_mean_flux</th><th>phot_rp_mean_flux_error</th><th>phot_rp_mean_flux_over_error</th><th>phot_rp_mean_mag</th><th>phot_bp_rp_excess_factor</th><th>phot_bp_n_contaminated_transits</th><th>phot_bp_n_blended_transits</th><th>phot_rp_n_contaminated_transits</th><th>phot_rp_n_blended_transits</th><th>phot_proc_mode</th><th>bp_rp</th><th>bp_g</th><th>g_rp</th><th>radial_velocity</th><th>radial_velocity_error</th><th>rv_method_used</th><th>rv_nb_transits</th><th>rv_nb_deblended_transits</th><th>rv_visibility_periods_used</th><th>rv_expected_sig_to_noise</th><th>rv_renormalised_gof</th><th>rv_chisq_pvalue</th><th>rv_time_duration</th><th>rv_amplitude_robust</th><th>rv_template_teff</th><th>rv_template_logg</th><th>rv_template_fe_h</th><th>rv_atm_param_origin</th><th>vbroad</th><th>vbroad_error</th><th>vbroad_nb_transits</th><th>grvs_mag</th><th>grvs_mag_error</th><th>grvs_mag_nb_transits</th><th>rvs_spec_sig_to_noise</th><th>phot_variable_flag</th><th>l</th><th>b</th><th>ecl_lon</th><th>ecl_lat</th><th>in_qso_candidates</th><th>in_galaxy_candidates</th><th>non_single_star</th><th>has_xp_continuous</th><th>has_xp_sampled</th><th>has_rvs</th><th>has_epoch_photometry</th><th>has_epoch_rv</th><th>has_mcmc_gspphot</th><th>has_mcmc_msc</th><th>in_andromeda_survey</th><th>classprob_dsc_combmod_quasar</th><th>classprob_dsc_combmod_galaxy</th><th>classprob_dsc_combmod_star</th><th>teff_gspphot</th><th>teff_gspphot_lower</th><th>teff_gspphot_upper</th><th>logg_gspphot</th><th>logg_gspphot_lower</th><th>logg_gspphot_upper</th><th>mh_gspphot</th><th>mh_gspphot_lower</th><th>mh_gspphot_upper</th><th>distance_gspphot</th><th>distance_gspphot_lower</th><th>distance_gspphot_upper</th><th>azero_gspphot</th><th>azero_gspphot_lower</th><th>azero_gspphot_upper</th><th>ag_gspphot</th><th>ag_gspphot_lower</th><th>ag_gspphot_upper</th><th>ebpminrp_gspphot</th><th>ebpminrp_gspphot_lower</th><th>ebpminrp_gspphot_upper</th><th>libname_gspphot</th><th>dist</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th></th><th>yr</th><th>deg</th><th>mas</th><th>deg</th><th>mas</th><th>mas</th><th>mas</th><th></th><th>mas / yr</th><th>mas / yr</th><th>mas / yr</th><th>mas / yr</th><th>mas / yr</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mas</th><th></th><th></th><th></th><th>1 / um</th><th>1 / um</th><th>1 / um</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mas</th><th></th><th></th><th></th><th></th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>deg</th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th>electron / s</th><th>electron / s</th><th></th><th>mag</th><th></th><th>electron / s</th><th>electron / s</th><th></th><th>mag</th><th></th><th>electron / s</th><th>electron / s</th><th></th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>km / s</th><th>km / s</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>d</th><th>km / s</th><th>K</th><th>log(cm.s**-2)</th><th>dex</th><th></th><th>km / s</th><th>km / s</th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th>deg</th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>K</th><th>K</th><th>K</th><th>log(cm.s**-2)</th><th>log(cm.s**-2)</th><th>log(cm.s**-2)</th><th>dex</th><th>dex</th><th>dex</th><th>pc</th><th>pc</th><th>pc</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th></tr></thead>
 <thead><tr><th>int64</th><th>object</th><th>int64</th><th>int64</th><th>float64</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>bool</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>int16</th><th>float32</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>bool</th><th>int16</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>float32</th><th>float32</th><th>int16</th><th>float32</th><th>float32</th><th>int16</th><th>float32</th><th>object</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>bool</th><th>bool</th><th>int16</th><th>bool</th><th>bool</th><th>bool</th><th>bool</th><th>bool</th><th>bool</th><th>bool</th><th>bool</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>object</th><th>float64</th></tr></thead>
@@ -992,15 +987,15 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <tr><td>1636148068921376768</td><td>Gaia DR3 2051293324216539648</td><td>2051293324216539648</td><td>1649457609</td><td>2016.0</td><td>290.2242320409821</td><td>0.5271274</td><td>37.80039510739463</td><td>0.76655334</td><td>1.3632756584241434</td><td>0.6728546</td><td>2.0261073</td><td>2.2253373</td><td>-0.9708645882906146</td><td>0.6578662</td><td>-2.0023856302519407</td><td>0.98862535</td><td>-0.33465353</td><td>0.08556003</td><td>-0.2735162</td><td>0.2602703</td><td>0.161614</td><td>0.21899539</td><td>-0.26542807</td><td>0.033500012</td><td>0.1458301</td><td>-0.23663591</td><td>243</td><td>0</td><td>243</td><td>0</td><td>1.2024069</td><td>273.66382</td><td>0.0</td><td>0.0</td><td>95</td><td>False</td><td>--</td><td>1.6818463</td><td>0.19114311</td><td>-0.26075235</td><td>0.11348202</td><td>-0.08333635</td><td>-0.06321393</td><td>-0.15212661</td><td>28</td><td>18</td><td>1.4304484</td><td>32</td><td>14</td><td>1</td><td>0.0707902</td><td>34.375954</td><td>0</td><td>15</td><td>1.0543019</td><td>0.24560685</td><td>0.4438982</td><td>0.22968337</td><td>0.165783</td><td>-110.25776</td><td>67.43046</td><td>5.994361</td><td>-23.29821</td><td>False</td><td>244</td><td>109.8552156027335</td><td>0.8030061</td><td>136.80496</td><td>20.585316</td><td>0</td><td>--</td><td>--</td><td>--</td><td>--</td><td>0</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>2</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.98599242480627</td><td>10.91397427439119</td><td>302.0402394379523</td><td>59.01056325889003</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.0023210548670645637</td></tr>
 <tr><td>1636148068921376768</td><td>Gaia DR3 2051293324225336064</td><td>2051293324225336064</td><td>398090960</td><td>2016.0</td><td>290.22302939666463</td><td>0.47650018</td><td>37.8003404115494</td><td>0.57163584</td><td>1.0465539617532613</td><td>0.60573983</td><td>1.7277284</td><td>0.3426481</td><td>0.016525679687419553</td><td>0.6219764</td><td>-0.34224935447443744</td><td>0.7205138</td><td>-0.11358616</td><td>0.1529165</td><td>0.07183364</td><td>-0.104466826</td><td>0.054135017</td><td>-0.07860708</td><td>-0.1758327</td><td>0.10776901</td><td>-0.16631071</td><td>-0.16472225</td><td>373</td><td>0</td><td>365</td><td>8</td><td>86.80703</td><td>12487.478</td><td>6.598426</td><td>424.3264</td><td>95</td><td>False</td><td>--</td><td>1.2976544</td><td>0.14454299</td><td>-0.057665557</td><td>0.052674405</td><td>0.033202734</td><td>0.010857275</td><td>-0.07922697</td><td>43</td><td>25</td><td>1.0361372</td><td>50</td><td>50</td><td>0</td><td>0.19814193</td><td>21.407808</td><td>63</td><td>0</td><td>5.6149945</td><td>0.1693135</td><td>0.21580335</td><td>0.10183408</td><td>0.09376588</td><td>-92.04377</td><td>70.39044</td><td>0.82470447</td><td>-23.783632</td><td>False</td><td>298</td><td>836.206629484886</td><td>5.043918</td><td>165.78514</td><td>18.381582</td><td>43</td><td>492.85805036589596</td><td>5.0838623</td><td>96.945595</td><td>18.606737</td><td>41</td><td>916.8429900655037</td><td>6.7629867</td><td>135.56776</td><td>17.342157</td><td>1.6858286</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>1.2645798</td><td>0.22515488</td><td>1.0394249</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.98551833187275</td><td>10.914804515213548</td><td>302.0384324817961</td><td>59.01076433315906</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>9.514203e-11</td><td>1.056036e-05</td><td>0.99998164</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.0027187891427339723</td></tr>
 <tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051288101537870720</td><td>2051288101537870720</td><td>1476096901</td><td>2016.0</td><td>290.1654951838555</td><td>0.04821452</td><td>37.78544763786987</td><td>0.057633974</td><td>0.22503724093996813</td><td>0.060696572</td><td>3.7075775</td><td>2.275607</td><td>-0.40649463749074166</td><td>0.060702868</td><td>-2.2390065331160773</td><td>0.06900224</td><td>0.012334322</td><td>0.13113154</td><td>-0.11899681</td><td>-0.019961989</td><td>0.14481837</td><td>-0.038124166</td><td>-0.29374352</td><td>-0.14935088</td><td>-0.11253025</td><td>0.07077164</td><td>419</td><td>0</td><td>419</td><td>0</td><td>-0.67899024</td><td>410.35037</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.504531</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>48</td><td>27</td><td>0.09853348</td><td>49</td><td>23</td><td>0</td><td>0.019995905</td><td>15.846279</td><td>0</td><td>0</td><td>0.9756978</td><td>0.15598494</td><td>0.12121681</td><td>0.09078951</td><td>0.13566518</td><td>-107.63154</td><td>79.53522</td><td>2.3636649</td><td>-34.418354</td><td>False</td><td>417</td><td>1993.7156577629107</td><td>1.4394238</td><td>1385.079</td><td>17.43821</td><td>40</td><td>950.0458805863858</td><td>6.864714</td><td>138.39555</td><td>17.89418</td><td>39</td><td>1436.0270711844762</td><td>5.677532</td><td>252.93156</td><td>16.854988</td><td>1.196797</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1.0391922</td><td>0.45597076</td><td>0.58322144</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.95160438021598</td><td>10.949157081403966</td><td>301.94561639491445</td><td>59.0085358362026</td><td>False</td><td>False</td><td>0</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td><td>1.0226445e-13</td><td>5.119075e-13</td><td>0.9999763</td><td>5141.5874</td><td>5123.6333</td><td>5158.2056</td><td>4.6326</td><td>4.6194</td><td>4.6433</td><td>-0.1554</td><td>-0.2038</td><td>-0.1121</td><td>1939.21</td><td>1896.9001</td><td>1979.4012</td><td>0.0037</td><td>0.0009</td><td>0.0107</td><td>0.003</td><td>0.0007</td><td>0.0086</td><td>0.0016</td><td>0.0003</td><td>0.0045</td><td>PHOENIX</td><td>0.04992738302391301</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051105376451505792</td><td>2051105376451505792</td><td>883322466</td><td>2016.0</td><td>290.25702221163755</td><td>0.18905094</td><td>37.75972204677077</td><td>0.2666551</td><td>-0.039959702467232905</td><td>0.25163692</td><td>-0.15879904</td><td>2.4071147</td><td>-0.49144532612992103</td><td>0.24496886</td><td>-2.3564132165553557</td><td>0.34456575</td><td>0.12697652</td><td>0.14626107</td><td>-0.19946665</td><td>-0.0483627</td><td>0.07724031</td><td>-0.09694064</td><td>-0.30264643</td><td>-0.12386921</td><td>0.12871955</td><td>0.22539671</td><td>336</td><td>0</td><td>334</td><td>2</td><td>0.6659974</td><td>366.43585</td><td>0.53870255</td><td>0.5023208</td><td>95</td><td>False</td><td>--</td><td>1.3167961</td><td>0.06423852</td><td>-0.042650696</td><td>0.016197763</td><td>0.06316402</td><td>-0.07971905</td><td>-0.026673468</td><td>40</td><td>24</td><td>0.49691302</td><td>44</td><td>21</td><td>0</td><td>0.04652881</td><td>11.265161</td><td>0</td><td>6</td><td>1.0250903</td><td>0.21310079</td><td>0.28677547</td><td>0.15462908</td><td>0.17873366</td><td>-106.79698</td><td>-85.40637</td><td>-17.572538</td><td>-26.361528</td><td>False</td><td>332</td><td>290.82182538107634</td><td>0.9811591</td><td>296.4064</td><td>19.5283</td><td>30</td><td>191.56420702782418</td><td>7.9658885</td><td>24.048065</td><td>19.632757</td><td>30</td><td>383.7427884655358</td><td>10.2831545</td><td>37.317616</td><td>18.287794</td><td>1.9782112</td><td>0</td><td>30</td><td>0</td><td>30</td><td>0</td><td>1.3449631</td><td>0.104457855</td><td>1.2405052</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.96033287236655</td><td>10.87285183333383</td><td>302.06762743476895</td><td>58.96444565627617</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>1.600451e-09</td><td>6.6841253e-06</td><td>0.9999911</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.04993419538093678</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051105715754593536</td><td>2051105715754593536</td><td>367649089</td><td>2016.0</td><td>290.280804620236</td><td>0.14492457</td><td>37.779546916641095</td><td>0.17963423</td><td>0.21468976829977565</td><td>0.18964018</td><td>1.1320901</td><td>7.283765</td><td>-1.5459199132772414</td><td>0.18082064</td><td>-7.117820261813646</td><td>0.226899</td><td>0.0821018</td><td>0.19335385</td><td>-0.19755834</td><td>-0.0073253466</td><td>0.17681892</td><td>-0.059489112</td><td>-0.13821003</td><td>-0.10181402</td><td>0.08707409</td><td>0.12708417</td><td>339</td><td>0</td><td>338</td><td>1</td><td>0.13918142</td><td>351.19504</td><td>0.0</td><td>0.0</td><td>95</td><td>False</td><td>--</td><td>1.3965503</td><td>0.052453425</td><td>-0.21597628</td><td>0.046664923</td><td>-0.14694694</td><td>0.0073276316</td><td>-0.10843161</td><td>40</td><td>25</td><td>0.3193467</td><td>44</td><td>18</td><td>0</td><td>0.025737958</td><td>3.3489754</td><td>0</td><td>0</td><td>1.0044005</td><td>0.28954354</td><td>0.21789046</td><td>0.10168418</td><td>0.21477832</td><td>-101.08861</td><td>-86.16012</td><td>-9.762876</td><td>-25.57112</td><td>False</td><td>339</td><td>447.7702296111591</td><td>0.9872021</td><td>453.57504</td><td>19.059729</td><td>40</td><td>189.71597841117108</td><td>4.778628</td><td>39.70093</td><td>19.643282</td><td>40</td><td>375.7994248842881</td><td>5.9547777</td><td>63.10889</td><td>18.310505</td><td>1.2629589</td><td>0</td><td>2</td><td>0</td><td>1</td><td>0</td><td>1.332777</td><td>0.5835533</td><td>0.7492237</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.98687073758735</td><td>10.864652528833176</td><td>302.1130527278516</td><td>58.97852325474902</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>9.687291e-11</td><td>2.1935703e-10</td><td>0.9999868</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.049937021935667826</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051105342091729152</td><td>2051105342091729152</td><td>987208462</td><td>2016.0</td><td>290.2498342848316</td><td>0.18311875</td><td>37.7568154080175</td><td>0.23919971</td><td>0.33264640961489067</td><td>0.24093883</td><td>1.380626</td><td>6.841415</td><td>-3.039507836669035</td><td>0.23630942</td><td>-6.1291394683796065</td><td>0.29052094</td><td>0.06648603</td><td>0.18299167</td><td>-0.13769636</td><td>-0.05914548</td><td>0.17252389</td><td>-0.109444715</td><td>-0.24172258</td><td>-0.12743072</td><td>0.02975334</td><td>0.1879744</td><td>378</td><td>0</td><td>377</td><td>1</td><td>0.6412554</td><td>409.2934</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.5193098</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>44</td><td>26</td><td>0.4198297</td><td>47</td><td>22</td><td>0</td><td>0.036963172</td><td>7.785712</td><td>0</td><td>0</td><td>1.0226985</td><td>0.20777619</td><td>0.22200799</td><td>0.12704432</td><td>0.11301937</td><td>-103.070724</td><td>-89.776115</td><td>-15.491943</td><td>-22.853712</td><td>False</td><td>364</td><td>274.33505719729413</td><td>0.83240443</td><td>329.56943</td><td>19.591663</td><td>20</td><td>108.42793269198275</td><td>8.1400175</td><td>13.320356</td><td>20.250689</td><td>22</td><td>229.26346946948766</td><td>7.0309343</td><td>32.607822</td><td>18.84706</td><td>1.2309451</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1.4036293</td><td>0.6590252</td><td>0.7446041</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.95513531037714</td><td>10.876684519101982</td><td>302.055500002796</td><td>58.96316234659864</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>7.055214e-10</td><td>2.4849628e-10</td><td>0.9999974</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.049944646819559776</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051294595528631808</td><td>2051294595528631808</td><td>132742956</td><td>2016.0</td><td>290.20159605323926</td><td>0.31878126</td><td>37.849139504585956</td><td>0.4108245</td><td>-0.12391565776920735</td><td>0.4221808</td><td>-0.29351324</td><td>3.416373</td><td>-1.2441356333735205</td><td>0.42176288</td><td>-3.1817810079389437</td><td>0.5004318</td><td>-0.050365023</td><td>-0.0008751949</td><td>-0.17113145</td><td>0.052433796</td><td>0.13154244</td><td>0.061325245</td><td>-0.26776782</td><td>0.0703754</td><td>-0.04012821</td><td>-0.025681598</td><td>349</td><td>0</td><td>347</td><td>2</td><td>2.601649</td><td>440.67697</td><td>1.641707</td><td>2.0908484</td><td>31</td><td>False</td><td>1.4571096</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>41</td><td>24</td><td>0.7057606</td><td>43</td><td>21</td><td>0</td><td>0.018866189</td><td>31.54997</td><td>0</td><td>0</td><td>1.1001017</td><td>0.2407212</td><td>0.19015062</td><td>0.13248968</td><td>0.1401775</td><td>-98.95326</td><td>79.32095</td><td>-10.734245</td><td>-22.811646</td><td>False</td><td>346</td><td>162.80630029410034</td><td>0.72370195</td><td>224.9632</td><td>20.15819</td><td>40</td><td>88.09942109357075</td><td>4.8307185</td><td>18.237333</td><td>20.47611</td><td>39</td><td>109.63341109058099</td><td>5.6637025</td><td>19.357199</td><td>19.648039</td><td>1.2145281</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.8280716</td><td>0.31792068</td><td>0.5101509</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.02264706458212</td><td>10.951397166233019</td><td>302.0320582619724</td><td>59.06231257269266</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>1.8466157e-08</td><td>7.57946e-10</td><td>0.99999225</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.04995017327286985</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051293564734766208</td><td>2051293564734766208</td><td>1140836395</td><td>2016.0</td><td>290.284611215241</td><td>0.19846809</td><td>37.818928955959755</td><td>0.25827777</td><td>0.42437517750308906</td><td>0.26023453</td><td>1.6307412</td><td>2.672299</td><td>-0.36837091118114074</td><td>0.25271687</td><td>-2.646787449087477</td><td>0.31571978</td><td>0.022631811</td><td>0.07644129</td><td>-0.0386861</td><td>-0.027465278</td><td>0.08704854</td><td>-0.076738395</td><td>-0.2122061</td><td>-0.011657735</td><td>0.07329119</td><td>0.13596117</td><td>373</td><td>0</td><td>371</td><td>2</td><td>0.69725716</td><td>399.0092</td><td>0.50564337</td><td>0.4083656</td><td>95</td><td>False</td><td>--</td><td>1.4507254</td><td>0.06923322</td><td>-0.094798625</td><td>0.1284554</td><td>0.025951082</td><td>-0.15272623</td><td>-0.07501197</td><td>45</td><td>26</td><td>0.448276</td><td>49</td><td>21</td><td>0</td><td>0.0034285483</td><td>126.74221</td><td>0</td><td>0</td><td>1.0249964</td><td>0.2242597</td><td>0.1924402</td><td>0.0709199</td><td>0.12980221</td><td>-98.00924</td><td>89.90393</td><td>-16.552565</td><td>-28.187826</td><td>False</td><td>375</td><td>265.7468947091863</td><td>0.9801038</td><td>271.14157</td><td>19.626196</td><td>19</td><td>186.72408355470947</td><td>17.84828</td><td>10.461741</td><td>19.660542</td><td>17</td><td>322.6965427610224</td><td>18.00704</td><td>17.920576</td><td>18.47591</td><td>1.9169391</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>1.1846313</td><td>0.034345627</td><td>1.1502857</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.0242520847949</td><td>10.879224379025027</td><td>302.13914736517705</td><td>59.01566265745925</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>2.237545e-09</td><td>1.1975736e-05</td><td>0.999988</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.04997304885611112</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051293560440219776</td><td>2051293560440219776</td><td>468406816</td><td>2016.0</td><td>290.2824764003652</td><td>0.0670952</td><td>37.82319670158857</td><td>0.08790515</td><td>0.19609972636397568</td><td>0.08809279</td><td>2.2260587</td><td>2.2592366</td><td>-0.3504044686282836</td><td>0.08420435</td><td>-2.2318976044885916</td><td>0.10411392</td><td>-0.0277822</td><td>0.11649344</td><td>-0.0013309642</td><td>-0.0026663947</td><td>0.041511085</td><td>-0.01673569</td><td>-0.2758432</td><td>-0.04604975</td><td>-0.034664087</td><td>0.025199417</td><td>401</td><td>0</td><td>400</td><td>1</td><td>-0.95538807</td><td>383.92657</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.495298</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>46</td><td>27</td><td>0.1470113</td><td>51</td><td>22</td><td>0</td><td>0.01771481</td><td>8.017093</td><td>0</td><td>0</td><td>0.965368</td><td>0.23983715</td><td>0.21379092</td><td>0.057209257</td><td>0.11334882</td><td>-95.99321</td><td>84.87185</td><td>-0.7996727</td><td>-28.648691</td><td>False</td><td>406</td><td>1125.789695176469</td><td>1.2112837</td><td>929.4187</td><td>18.058723</td><td>45</td><td>517.7398808963094</td><td>5.841485</td><td>88.63155</td><td>18.553263</td><td>44</td><td>810.5151900044447</td><td>7.3433576</td><td>110.373924</td><td>17.475992</td><td>1.179843</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1.0772705</td><td>0.49453926</td><td>0.58273125</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.0274044867681</td><td>10.882611695924751</td><td>302.1382120297565</td><td>59.02022616662701</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td><td>1.0224728e-13</td><td>5.244856e-13</td><td>0.999979</td><td>5021.658</td><td>4976.7427</td><td>5065.875</td><td>4.6656</td><td>4.6308</td><td>4.6852</td><td>-0.2925</td><td>-0.4153</td><td>-0.1754</td><td>2265.6306</td><td>2154.7927</td><td>2422.6208</td><td>0.0069</td><td>0.0017</td><td>0.0176</td><td>0.0055</td><td>0.0013</td><td>0.0141</td><td>0.0029</td><td>0.0007</td><td>0.0075</td><td>PHOENIX</td><td>0.04997598495418403</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051105887561931520</td><td>2051105887561931520</td><td>489297215</td><td>2016.0</td><td>290.28771982216256</td><td>0.17982018</td><td>37.79753057383014</td><td>0.22851922</td><td>-0.27637032867327577</td><td>0.23563609</td><td>-1.1728692</td><td>2.7092662</td><td>-0.8106479890183471</td><td>0.23371251</td><td>-2.5851446903556123</td><td>0.29344675</td><td>0.1637247</td><td>0.2333921</td><td>-0.052740883</td><td>-0.0014309319</td><td>0.17818415</td><td>-0.04178299</td><td>-0.1668674</td><td>0.030660324</td><td>0.1277136</td><td>0.24382767</td><td>360</td><td>0</td><td>359</td><td>1</td><td>0.45686695</td><td>382.51477</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.4419978</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>42</td><td>26</td><td>0.42486578</td><td>46</td><td>19</td><td>0</td><td>0.024028761</td><td>19.193428</td><td>0</td><td>0</td><td>1.0162723</td><td>0.23008826</td><td>0.213876</td><td>0.09316541</td><td>0.14170524</td><td>-89.87326</td><td>-80.582855</td><td>-20.517448</td><td>-27.920107</td><td>False</td><td>364</td><td>312.1578148653012</td><td>0.8630008</td><td>361.71207</td><td>19.451431</td><td>43</td><td>106.71067735738295</td><td>5.8664865</td><td>18.189878</td><td>20.268023</td><td>42</td><td>250.00603032889998</td><td>8.702527</td><td>28.727982</td><td>18.75302</td><td>1.1427448</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1.5150032</td><td>0.81659126</td><td>0.69841194</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.00576776990025</td><td>10.867630795568862</td><td>302.1326139962143</td><td>58.99438818311647</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>3.923956e-10</td><td>6.2316663e-10</td><td>0.9999929</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.04998339321858548</td></tr>
-<tr><td>1636148068921376768</td><td>Gaia DR3 2051105376451534080</td><td>2051105376451534080</td><td>349005785</td><td>2016.0</td><td>290.2620306861585</td><td>0.21345817</td><td>37.76225637755539</td><td>0.28413698</td><td>0.304847155398599</td><td>0.27989152</td><td>1.0891618</td><td>2.7098396</td><td>-0.14449493714268458</td><td>0.27666575</td><td>-2.7059844059821785</td><td>0.3406538</td><td>0.111298405</td><td>0.07204159</td><td>-0.12538862</td><td>-0.055207342</td><td>0.13312708</td><td>-0.1043947</td><td>-0.21191615</td><td>-0.16984196</td><td>0.055460937</td><td>0.2138439</td><td>348</td><td>0</td><td>344</td><td>4</td><td>-0.37459254</td><td>341.67722</td><td>0.0</td><td>0.0</td><td>95</td><td>False</td><td>--</td><td>1.4468051</td><td>0.07294632</td><td>-0.062292464</td><td>0.06712199</td><td>0.040067807</td><td>-0.10036108</td><td>-0.08958374</td><td>41</td><td>25</td><td>0.49400654</td><td>44</td><td>19</td><td>0</td><td>0.024567783</td><td>3.541193</td><td>1</td><td>0</td><td>0.98464596</td><td>0.2542177</td><td>0.2283579</td><td>0.12611242</td><td>0.1156371</td><td>-111.30088</td><td>-87.94184</td><td>-12.496002</td><td>-21.521162</td><td>False</td><td>334</td><td>235.45663259991187</td><td>0.7688483</td><td>306.2459</td><td>19.75759</td><td>36</td><td>85.92625106757575</td><td>6.0261345</td><td>14.258933</td><td>20.503227</td><td>35</td><td>175.13321253443684</td><td>5.9210563</td><td>29.578035</td><td>19.139475</td><td>1.1087369</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1.3637524</td><td>0.7456379</td><td>0.6181145</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.9644203275566</td><td>10.870404794991602</td><td>302.0763416918218</td><td>58.96583000941361</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>3.0029546e-10</td><td>7.6057516e-10</td><td>0.9999992</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.04999419931408359</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051294870411535616</td><td>2051294870411535616</td><td>430955701</td><td>2016.0</td><td>290.1710542799103</td><td>0.089351624</td><td>37.874210138824154</td><td>0.10865699</td><td>0.3694586266163912</td><td>0.113834515</td><td>3.2455766</td><td>9.114665</td><td>-6.31871143886455</td><td>0.11210035</td><td>-6.568942750936787</td><td>0.13436429</td><td>-0.007841255</td><td>0.11561305</td><td>-0.01169015</td><td>-0.03635325</td><td>0.11398082</td><td>-0.05428327</td><td>-0.21885028</td><td>-0.10007106</td><td>-0.08220788</td><td>0.061571144</td><td>399</td><td>0</td><td>392</td><td>7</td><td>0.13260055</td><td>406.64862</td><td>0.22923899</td><td>0.41862753</td><td>31</td><td>False</td><td>1.4996165</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>46</td><td>27</td><td>0.18900031</td><td>49</td><td>22</td><td>0</td><td>0.011167029</td><td>1.7622564</td><td>0</td><td>0</td><td>1.0039074</td><td>0.26786533</td><td>0.10760525</td><td>0.10404573</td><td>0.08249484</td><td>-87.45818</td><td>75.753624</td><td>-15.217908</td><td>-38.780235</td><td>False</td><td>384</td><td>779.8054003243237</td><td>1.0609461</td><td>735.00946</td><td>18.457401</td><td>46</td><td>362.8243922628937</td><td>6.342421</td><td>57.20598</td><td>18.9393</td><td>45</td><td>563.964440036763</td><td>5.256008</td><td>107.299</td><td>17.869766</td><td>1.1884873</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1.0695343</td><td>0.48189926</td><td>0.58763504</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.03485933670954</td><td>10.984050062538527</td><td>301.9998719659017</td><td>59.09291303817852</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>3.5958955e-11</td><td>5.3623333e-13</td><td>0.9999949</td><td>4889.5947</td><td>4878.3716</td><td>4901.4575</td><td>4.8392</td><td>4.8272</td><td>4.8515</td><td>-1.6225</td><td>-1.7671</td><td>-1.5237</td><td>1828.6827</td><td>1778.3691</td><td>1860.6678</td><td>0.0045</td><td>0.0011</td><td>0.0108</td><td>0.0036</td><td>0.0009</td><td>0.0086</td><td>0.002</td><td>0.0005</td><td>0.0047</td><td>MARCS</td><td>0.0831808340919906</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051288234680628736</td><td>2051288234680628736</td><td>275359989</td><td>2016.0</td><td>290.1228125225418</td><td>0.12832773</td><td>37.7819163631625</td><td>0.16770653</td><td>0.45711970927190115</td><td>0.16442272</td><td>2.7801495</td><td>15.87947</td><td>-6.491827713462847</td><td>0.16428103</td><td>-14.491851015938131</td><td>0.21764661</td><td>0.002764468</td><td>0.12523003</td><td>-0.10028199</td><td>0.050657623</td><td>0.06666436</td><td>0.005579139</td><td>-0.37272593</td><td>-0.118829906</td><td>0.0050995317</td><td>0.1139823</td><td>409</td><td>0</td><td>409</td><td>0</td><td>-1.3663982</td><td>383.07782</td><td>0.0</td><td>1.9997444e-15</td><td>31</td><td>False</td><td>1.3034092</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>47</td><td>27</td><td>0.3113583</td><td>48</td><td>23</td><td>0</td><td>0.010293381</td><td>2.4593005</td><td>0</td><td>0</td><td>0.95150584</td><td>0.17092009</td><td>0.1387889</td><td>0.05828934</td><td>0.13473459</td><td>-116.178055</td><td>83.69419</td><td>2.6145937</td><td>-36.532135</td><td>False</td><td>407</td><td>450.44352750937213</td><td>0.8725948</td><td>516.2116</td><td>19.053267</td><td>45</td><td>103.68771152397954</td><td>5.136524</td><td>20.186357</td><td>20.299225</td><td>45</td><td>502.45009105705196</td><td>3.6524675</td><td>137.56456</td><td>17.995163</td><td>1.3456466</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2.304062</td><td>1.2459583</td><td>1.0581036</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.9333371194973</td><td>10.977945740748442</td><td>301.88063476010194</td><td>59.014107067896354</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>3.8000676e-13</td><td>7.05338e-13</td><td>0.9998841</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.08322243598195858</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051294870411542272</td><td>2051294870411542272</td><td>1651247147</td><td>2016.0</td><td>290.1750101665401</td><td>0.06694008</td><td>37.87602842402639</td><td>0.092485614</td><td>0.20603759179502212</td><td>0.08579865</td><td>2.4014082</td><td>2.2515461</td><td>-0.3932337230718288</td><td>0.08297268</td><td>-2.216941094221096</td><td>0.118552975</td><td>-0.06297449</td><td>0.14318395</td><td>-0.033632368</td><td>0.03577277</td><td>-0.034115147</td><td>0.00034698079</td><td>-0.4515389</td><td>-0.10937831</td><td>0.07231181</td><td>0.009728736</td><td>377</td><td>0</td><td>374</td><td>3</td><td>0.06470177</td><td>384.27502</td><td>0.0</td><td>0.0</td><td>95</td><td>False</td><td>--</td><td>1.4371054</td><td>0.023171378</td><td>-0.16051838</td><td>0.025070293</td><td>-0.010794556</td><td>-0.07607864</td><td>0.028111283</td><td>43</td><td>26</td><td>0.17073497</td><td>48</td><td>22</td><td>1</td><td>0.01102003</td><td>161.05574</td><td>0</td><td>15</td><td>1.0014795</td><td>0.2962618</td><td>0.18218416</td><td>0.14427209</td><td>0.11568721</td><td>-84.172356</td><td>75.77043</td><td>-18.850288</td><td>42.884228</td><td>False</td><td>374</td><td>1241.344401787872</td><td>1.2767242</td><td>972.2886</td><td>17.952637</td><td>0</td><td>--</td><td>--</td><td>--</td><td>--</td><td>0</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>2</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.0379165005182</td><td>10.982037682530848</td><td>302.00667588191897</td><td>59.093831343557795</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.08322879189943044</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051295381516623744</td><td>2051295381516623744</td><td>1667872848</td><td>2016.0</td><td>290.2882629014902</td><td>0.14793906</td><td>37.86913015536792</td><td>0.21439508</td><td>0.6608720254317446</td><td>0.1987435</td><td>3.3252509</td><td>8.816373</td><td>-2.6884990926127106</td><td>0.19940175</td><td>-8.39645178415166</td><td>0.26135257</td><td>-0.12174883</td><td>0.10869827</td><td>0.06210663</td><td>0.0064050634</td><td>0.07006799</td><td>-0.034789</td><td>-0.36298344</td><td>0.027279017</td><td>-0.00647773</td><td>-0.083680145</td><td>339</td><td>0</td><td>338</td><td>1</td><td>0.5362549</td><td>369.1253</td><td>0.41999847</td><td>0.5260669</td><td>95</td><td>False</td><td>--</td><td>1.3389693</td><td>0.05077461</td><td>-0.087569006</td><td>0.18131016</td><td>-0.04555531</td><td>-0.13339908</td><td>-0.11010846</td><td>39</td><td>23</td><td>0.3739153</td><td>42</td><td>20</td><td>0</td><td>0.029168483</td><td>178.31316</td><td>0</td><td>0</td><td>1.019872</td><td>0.2148467</td><td>0.20623815</td><td>0.12674522</td><td>0.11732818</td><td>-75.89927</td><td>79.33952</td><td>-25.199</td><td>-39.338097</td><td>False</td><td>346</td><td>420.7538148013615</td><td>1.0356286</td><td>406.27866</td><td>19.127296</td><td>39</td><td>140.64232775208788</td><td>7.4752154</td><td>18.814486</td><td>19.968252</td><td>39</td><td>478.4602734701604</td><td>9.109383</td><td>52.523895</td><td>18.04828</td><td>1.4714129</td><td>0</td><td>22</td><td>0</td><td>22</td><td>0</td><td>1.9199715</td><td>0.84095573</td><td>1.0790157</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.0714830724915</td><td>10.89864899377486</td><td>302.1707078793191</td><td>59.063253212461184</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>8.597156e-11</td><td>5.9048273e-09</td><td>0.9999822</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.08324003047068324</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051288406479389696</td><td>2051288406479389696</td><td>856711248</td><td>2016.0</td><td>290.1194354085638</td><td>0.1685125</td><td>37.80348115009846</td><td>0.21949896</td><td>0.24010742276483804</td><td>0.20961256</td><td>1.1454821</td><td>6.186268</td><td>-2.2508290547655534</td><td>0.21421075</td><td>-5.762263219114228</td><td>0.27950856</td><td>-0.04189369</td><td>0.055101015</td><td>-0.16017503</td><td>0.114143774</td><td>0.15277705</td><td>0.08570732</td><td>-0.41045648</td><td>-0.013016244</td><td>-0.025973871</td><td>0.046091143</td><td>369</td><td>0</td><td>369</td><td>0</td><td>-0.34031537</td><td>371.16574</td><td>0.0</td><td>4.2135146e-15</td><td>31</td><td>False</td><td>1.4944085</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>42</td><td>25</td><td>0.40078756</td><td>43</td><td>21</td><td>0</td><td>0.009520529</td><td>19.020708</td><td>0</td><td>0</td><td>0.9865019</td><td>0.20752354</td><td>0.112608805</td><td>0.099987626</td><td>0.1787911</td><td>-113.13249</td><td>83.67482</td><td>12.821432</td><td>-33.98683</td><td>False</td><td>367</td><td>332.1875262158305</td><td>0.86817735</td><td>382.62634</td><td>19.38391</td><td>38</td><td>136.82832781506718</td><td>7.0689607</td><td>19.356216</td><td>19.998102</td><td>40</td><td>250.45730102656773</td><td>5.909497</td><td>42.38217</td><td>18.75106</td><td>1.1658645</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1.2470417</td><td>0.61419296</td><td>0.63284874</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.95190401428546</td><td>10.989775662227835</td><td>301.88677645351646</td><td>59.035605221497256</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>5.805757e-10</td><td>2.1388297e-10</td><td>0.9999928</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.0832529718271768</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051107128798566528</td><td>2051107128798566528</td><td>53785428</td><td>2016.0</td><td>290.33007288300433</td><td>0.5063185</td><td>37.799005196546766</td><td>0.60861003</td><td>2.59582303334833</td><td>0.72787225</td><td>3.5663168</td><td>15.07725</td><td>-9.90581987549699</td><td>0.8522273</td><td>-11.36653796175356</td><td>0.78330284</td><td>-0.037682395</td><td>-0.031865645</td><td>-0.0061560404</td><td>-0.0959621</td><td>0.24388646</td><td>-0.024079807</td><td>-0.085402675</td><td>0.35197842</td><td>-0.08016355</td><td>-0.08673279</td><td>257</td><td>0</td><td>257</td><td>0</td><td>2.9779897</td><td>345.6605</td><td>2.6002293</td><td>2.6564052</td><td>95</td><td>False</td><td>--</td><td>1.3103058</td><td>0.1573422</td><td>-0.10415734</td><td>0.033458136</td><td>-0.09948709</td><td>-0.2720693</td><td>0.04197427</td><td>31</td><td>22</td><td>1.2133433</td><td>33</td><td>13</td><td>1</td><td>0.020845002</td><td>138.17416</td><td>0</td><td>0</td><td>1.1344311</td><td>0.18316215</td><td>0.09937623</td><td>0.23592351</td><td>0.23159805</td><td>-121.595795</td><td>82.81833</td><td>-15.507539</td><td>-25.80699</td><td>False</td><td>253</td><td>128.70082874164865</td><td>0.86452293</td><td>148.86919</td><td>20.413414</td><td>6</td><td>39.717968158819254</td><td>8.353689</td><td>4.7545424</td><td>21.341074</td><td>10</td><td>145.18349404606658</td><td>15.55031</td><td>9.336373</td><td>19.343102</td><td>1.4366765</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1.9979725</td><td>0.92766</td><td>1.0703125</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>70.02207192846973</td><td>10.83820692421412</td><td>302.19596551414276</td><td>58.98684034920937</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>2.8843332e-12</td><td>1.4122469e-09</td><td>0.99999326</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.08326359931304438</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051287964103728384</td><td>2051287964103728384</td><td>1638894158</td><td>2016.0</td><td>290.14278652187744</td><td>0.03494116</td><td>37.75037525259858</td><td>0.04241879</td><td>0.18366243526469542</td><td>0.043460846</td><td>4.2259283</td><td>2.248427</td><td>-0.4281612111184363</td><td>0.04497176</td><td>-2.2072837830215937</td><td>0.050941683</td><td>0.0351151</td><td>0.055712797</td><td>-0.14853671</td><td>-0.051824972</td><td>0.13105968</td><td>-0.06969542</td><td>-0.3188419</td><td>-0.1026289</td><td>-0.11638979</td><td>0.09372311</td><td>428</td><td>0</td><td>426</td><td>2</td><td>-0.6057206</td><td>420.23416</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.5003259</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>49</td><td>28</td><td>0.07342281</td><td>51</td><td>24</td><td>0</td><td>0.03158952</td><td>8.174233</td><td>0</td><td>0</td><td>0.97841215</td><td>0.12762302</td><td>0.13048583</td><td>0.06985256</td><td>0.09125381</td><td>-109.3513</td><td>84.420715</td><td>-1.0416744</td><td>-31.609655</td><td>False</td><td>426</td><td>3374.6423730218935</td><td>1.91779</td><td>1759.6516</td><td>16.866798</td><td>48</td><td>1618.891181717306</td><td>6.9249954</td><td>233.77505</td><td>17.315498</td><td>49</td><td>2463.8001524600472</td><td>6.911771</td><td>356.4644</td><td>16.268883</td><td>1.2098145</td><td>0</td><td>2</td><td>0</td><td>1</td><td>0</td><td>1.0466156</td><td>0.44869995</td><td>0.59791565</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.9114824714278</td><td>10.949949126990399</td><td>301.8939100069244</td><td>58.97950356750648</td><td>False</td><td>False</td><td>0</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td><td>1.02206966e-13</td><td>5.105279e-13</td><td>0.99998176</td><td>5064.985</td><td>5040.8657</td><td>5095.124</td><td>4.4424</td><td>4.4217</td><td>4.4671</td><td>-0.2906</td><td>-0.3312</td><td>-0.2518</td><td>1867.0823</td><td>1788.1481</td><td>1945.3528</td><td>0.018</td><td>0.0052</td><td>0.037</td><td>0.0144</td><td>0.0042</td><td>0.0297</td><td>0.0076</td><td>0.0022</td><td>0.0157</td><td>PHOENIX</td><td>0.08328823877757062</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051286933311580032</td><td>2051286933311580032</td><td>135441617</td><td>2016.0</td><td>290.17127999981165</td><td>0.04414948</td><td>37.73091082720331</td><td>0.05403776</td><td>0.2357502713121104</td><td>0.056459904</td><td>4.1755347</td><td>2.2787905</td><td>-0.29109566200012765</td><td>0.055603746</td><td>-2.260121567186946</td><td>0.06337706</td><td>-0.017252762</td><td>-0.013258554</td><td>-0.13981561</td><td>-0.051438995</td><td>0.18330099</td><td>-0.08995912</td><td>-0.30687386</td><td>-0.12603593</td><td>-0.08434859</td><td>0.07638833</td><td>414</td><td>0</td><td>412</td><td>2</td><td>0.1777575</td><td>428.2643</td><td>0.0</td><td>0.0</td><td>31</td><td>False</td><td>1.5031</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>47</td><td>26</td><td>0.09099819</td><td>50</td><td>24</td><td>0</td><td>0.032246273</td><td>6.7542543</td><td>1</td><td>0</td><td>1.0054163</td><td>0.08898983</td><td>0.14224733</td><td>0.105735905</td><td>0.10415334</td><td>-109.958275</td><td>77.31491</td><td>6.73328</td><td>-30.988867</td><td>False</td><td>407</td><td>2336.0785755551096</td><td>1.5201434</td><td>1536.7488</td><td>17.266148</td><td>46</td><td>1127.3346931358217</td><td>8.7009325</td><td>129.56482</td><td>17.70841</td><td>47</td><td>1705.0323755571399</td><td>7.5450583</td><td>225.98001</td><td>16.668564</td><td>1.2124451</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>1.0398464</td><td>0.44226265</td><td>0.5975838</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.9037037562353</td><td>10.921169975727066</td><td>301.9260051099228</td><td>58.95474875157075</td><td>False</td><td>False</td><td>0</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td><td>1.0224553e-13</td><td>5.108376e-13</td><td>0.99997795</td><td>5002.6284</td><td>4981.4526</td><td>5036.2627</td><td>4.602</td><td>4.5511</td><td>4.6331</td><td>-0.8208</td><td>-0.8784</td><td>-0.7534</td><td>1583.614</td><td>1512.6202</td><td>1733.1886</td><td>0.0243</td><td>0.0074</td><td>0.052</td><td>0.0195</td><td>0.0059</td><td>0.0419</td><td>0.0104</td><td>0.0032</td><td>0.0225</td><td>PHOENIX</td><td>0.08330419708303734</td></tr>
+<tr><td>1636148068921376768</td><td>Gaia DR3 2051286967664775424</td><td>2051286967664775424</td><td>954310899</td><td>2016.0</td><td>290.1971807329532</td><td>0.29303434</td><td>37.72225240386049</td><td>0.3611389</td><td>0.5080668310750222</td><td>0.37153193</td><td>1.3674917</td><td>2.9852633</td><td>-0.4817031435724317</td><td>0.36552507</td><td>-2.9461430747317072</td><td>0.44257566</td><td>0.14276683</td><td>0.072574675</td><td>-0.1556142</td><td>-0.05411414</td><td>0.09976298</td><td>-0.10295689</td><td>-0.3932338</td><td>-0.21745701</td><td>-0.03672264</td><td>0.23811138</td><td>345</td><td>0</td><td>343</td><td>2</td><td>0.5666112</td><td>368.38873</td><td>0.0</td><td>0.0</td><td>95</td><td>False</td><td>--</td><td>1.4355559</td><td>0.09823673</td><td>-0.033583496</td><td>0.060646504</td><td>0.054102458</td><td>-0.074938364</td><td>-0.10565697</td><td>40</td><td>23</td><td>0.66058314</td><td>42</td><td>19</td><td>0</td><td>0.017682025</td><td>156.029</td><td>0</td><td>0</td><td>1.0209081</td><td>0.26176822</td><td>0.10280499</td><td>0.15333837</td><td>0.21728502</td><td>-115.630585</td><td>-75.681816</td><td>-4.198842</td><td>-29.578873</td><td>False</td><td>341</td><td>175.07776030520455</td><td>0.8039993</td><td>217.7586</td><td>20.079288</td><td>18</td><td>81.09285212765688</td><td>9.768502</td><td>8.301462</td><td>20.566086</td><td>21</td><td>184.31333266013976</td><td>7.4463835</td><td>24.75206</td><td>19.084003</td><td>1.5159332</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1.4820824</td><td>0.48679733</td><td>0.99528503</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>NOT_AVAILABLE</td><td>69.9049148304103</td><td>10.898961260981507</td><td>301.95982243002953</td><td>58.94095155723347</td><td>False</td><td>False</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>4.541147e-10</td><td>2.3747997e-08</td><td>0.9999982</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td></td><td>0.08333124886811095</td></tr>
 </table></div></div></div>
 </div>
 <p>This query has returned very large number of columns, so we select the most useful columns to make the catalog easier to use with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code>.</p>
@@ -1012,8 +1007,8 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=2331</i>
-<table id="table139743543709136" class="table-striped table-bordered table-condensed">
+<div class="output text_html"><div><i>Table length=4865</i>
+<table id="table140547514986320" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ra</th><th>dec</th><th>phot_g_mean_mag</th></tr></thead>
 <thead><tr><th>deg</th><th>deg</th><th>mag</th></tr></thead>
 <thead><tr><th>float64</th><th>float64</th><th>float32</th></tr></thead>
@@ -1027,15 +1022,15 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <tr><td>290.2242320409821</td><td>37.80039510739463</td><td>20.585316</td></tr>
 <tr><td>290.22302939666463</td><td>37.8003404115494</td><td>18.381582</td></tr>
 <tr><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>290.1654951838555</td><td>37.78544763786987</td><td>17.43821</td></tr>
-<tr><td>290.25702221163755</td><td>37.75972204677077</td><td>19.5283</td></tr>
-<tr><td>290.280804620236</td><td>37.779546916641095</td><td>19.059729</td></tr>
-<tr><td>290.2498342848316</td><td>37.7568154080175</td><td>19.591663</td></tr>
-<tr><td>290.20159605323926</td><td>37.849139504585956</td><td>20.15819</td></tr>
-<tr><td>290.284611215241</td><td>37.818928955959755</td><td>19.626196</td></tr>
-<tr><td>290.2824764003652</td><td>37.82319670158857</td><td>18.058723</td></tr>
-<tr><td>290.28771982216256</td><td>37.79753057383014</td><td>19.451431</td></tr>
-<tr><td>290.2620306861585</td><td>37.76225637755539</td><td>19.75759</td></tr>
+<tr><td>290.1710542799103</td><td>37.874210138824154</td><td>18.457401</td></tr>
+<tr><td>290.1228125225418</td><td>37.7819163631625</td><td>19.053267</td></tr>
+<tr><td>290.1750101665401</td><td>37.87602842402639</td><td>17.952637</td></tr>
+<tr><td>290.2882629014902</td><td>37.86913015536792</td><td>19.127296</td></tr>
+<tr><td>290.1194354085638</td><td>37.80348115009846</td><td>19.38391</td></tr>
+<tr><td>290.33007288300433</td><td>37.799005196546766</td><td>20.413414</td></tr>
+<tr><td>290.14278652187744</td><td>37.75037525259858</td><td>16.866798</td></tr>
+<tr><td>290.17127999981165</td><td>37.73091082720331</td><td>17.266148</td></tr>
+<tr><td>290.1971807329532</td><td>37.72225240386049</td><td>20.079288</td></tr>
 </table></div></div></div>
 </div>
 <p>Then we write this catalog to an ascii file for use with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code>.</p>
@@ -1050,12 +1045,12 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </section>
 </section>
 <section id="align-with-tweakreg">
-<h2>3. Align with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code><a class="headerlink" href="#align-with-tweakreg" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>3. Align with <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code><a class="headerlink" href="#align-with-tweakreg" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>With the catalogs downloaded and the headers populated, we now need to run <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> with each catalog passed into the <code class="docutils literal notranslate"><span class="pre">refcat</span></code> parameter. The steps below compare the astrometric residuals obtained from aligning to each <code class="docutils literal notranslate"><span class="pre">refcat</span></code>. In each case, we set the <code class="docutils literal notranslate"><span class="pre">updatehdr</span></code> parameter to False to avoid altering the WCS of the images until we are satisfied with the alignment by inspecting both the <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> shift file and the astrometric residual plots.</p>
 <p><a id="sdss_align"></a></p>
 <section id="sdss-alignment">
-<h3>3.1 SDSS Alignment<a class="headerlink" href="#sdss-alignment" title="Permalink to this heading">#</a></h3>
+<h3>3.1 SDSS Alignment<a class="headerlink" href="#sdss-alignment" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">refcat</span> <span class="o">=</span> <span class="s1">&#39;sdss.cat&#39;</span>
@@ -1079,8 +1074,10 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/becce940745c4ef5a39ea18965f0d3d3f789608faa3961667bf75453f8a0eaba.png" src="../../../_images/becce940745c4ef5a39ea18965f0d3d3f789608faa3961667bf75453f8a0eaba.png" />
-<img alt="../../../_images/a9bb9d0057ed458d8edb3359e51e3cab153329f243ca1a6a46ef94863bc0c786.png" src="../../../_images/a9bb9d0057ed458d8edb3359e51e3cab153329f243ca1a6a46ef94863bc0c786.png" />
+<a class="reference internal image-reference" href="../../../_images/ab0b275d90b12e8aa46a6355322268f25cb5fff5d66e6b31b46b0421d7030c62.png"><img alt="../../../_images/ab0b275d90b12e8aa46a6355322268f25cb5fff5d66e6b31b46b0421d7030c62.png" src="../../../_images/ab0b275d90b12e8aa46a6355322268f25cb5fff5d66e6b31b46b0421d7030c62.png" style="width: 728px; height: 455px;" />
+</a>
+<a class="reference internal image-reference" href="../../../_images/d2c31c1241929d1701acfc29aeda3e92fd80470985a4e71a428630b0ce962e72.png"><img alt="../../../_images/d2c31c1241929d1701acfc29aeda3e92fd80470985a4e71a428630b0ce962e72.png" src="../../../_images/d2c31c1241929d1701acfc29aeda3e92fd80470985a4e71a428630b0ce962e72.png" style="width: 581px; height: 476px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1100,7 +1097,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <p><a id="fit_quality_sdss"></a></p>
 </section>
 <section id="inspect-the-shift-file-and-fit-residuals">
-<h3>3.2 Inspect the shift file and fit residuals<a class="headerlink" href="#inspect-the-shift-file-and-fit-residuals" title="Permalink to this heading">#</a></h3>
+<h3>3.2 Inspect the shift file and fit residuals<a class="headerlink" href="#inspect-the-shift-file-and-fit-residuals" title="Link to this heading">#</a></h3>
 <p>We can look at the shift file to see how well the fit did (or we could open the output png images for more information). The columns are:</p>
 <ul class="simple">
 <li><p>Filename, X Shift [pixels], Y Shift [pixels], Rotation [degrees], Scale, X RMS [pixels], Y RMS [pixels]</p></li>
@@ -1120,12 +1117,12 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743270410320" class="table-striped table-bordered table-condensed">
+<table id="table140547266757648" class="table-striped table-bordered table-condensed">
 <thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
 <thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>ibwb01xrq_flc.fits</td><td>1.48</td><td>0.56</td><td>0.002</td><td>0.99995</td><td>0.37</td><td>0.36</td></tr>
-<tr><td>ibwb01xxq_flc.fits</td><td>1.57</td><td>-0.14</td><td>360.000</td><td>1.00010</td><td>0.38</td><td>0.54</td></tr>
-<tr><td>ibwb01xqq_flc.fits</td><td>1.47</td><td>0.69</td><td>0.003</td><td>0.99993</td><td>0.37</td><td>0.34</td></tr>
+<tr><td>ibwb01xqq_flc.fits</td><td>1.48</td><td>0.67</td><td>0.003</td><td>0.99993</td><td>0.37</td><td>0.35</td></tr>
+<tr><td>ibwb01xxq_flc.fits</td><td>1.59</td><td>-0.01</td><td>360.000</td><td>1.00011</td><td>0.41</td><td>0.53</td></tr>
+<tr><td>ibwb01xrq_flc.fits</td><td>1.48</td><td>0.58</td><td>0.002</td><td>0.99995</td><td>0.37</td><td>0.36</td></tr>
 </table></div></div></div>
 </div>
 <p>Show the astrometric residual plots.</p>
@@ -1136,7 +1133,8 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/785b8b6bea772e7798108ab0ff921b6441fed872c530d628a5f9c39f8624b8e1.png" src="../../../_images/785b8b6bea772e7798108ab0ff921b6441fed872c530d628a5f9c39f8624b8e1.png" />
+<a class="reference internal image-reference" href="../../../_images/b863fa460ead9a6e1e531fc8df408de57d5bf0cb7526d93e71c684118cfbffba.png"><img alt="../../../_images/b863fa460ead9a6e1e531fc8df408de57d5bf0cb7526d93e71c684118cfbffba.png" src="../../../_images/b863fa460ead9a6e1e531fc8df408de57d5bf0cb7526d93e71c684118cfbffba.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1146,7 +1144,8 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/c2efb27bfa5bc07073df84c714d3c9c72091ed87171599e580224c499f4c97be.png" src="../../../_images/c2efb27bfa5bc07073df84c714d3c9c72091ed87171599e580224c499f4c97be.png" />
+<a class="reference internal image-reference" href="../../../_images/bde9d4f65a8fd286662d2ba89bfe130fc1fdee610e8ec874fa5fb6c23950ec0f.png"><img alt="../../../_images/bde9d4f65a8fd286662d2ba89bfe130fc1fdee610e8ec874fa5fb6c23950ec0f.png" src="../../../_images/bde9d4f65a8fd286662d2ba89bfe130fc1fdee610e8ec874fa5fb6c23950ec0f.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1156,14 +1155,15 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/5d2d609d045116248c5633b790d2ed5b0ab63657c48ff854213fcf5d6f362fba.png" src="../../../_images/5d2d609d045116248c5633b790d2ed5b0ab63657c48ff854213fcf5d6f362fba.png" />
+<a class="reference internal image-reference" href="../../../_images/0815fccaab2f649d9049a3538ca50f09cbd1531ea3d96c4cb1cfb2e437201bb4.png"><img alt="../../../_images/0815fccaab2f649d9049a3538ca50f09cbd1531ea3d96c4cb1cfb2e437201bb4.png" src="../../../_images/0815fccaab2f649d9049a3538ca50f09cbd1531ea3d96c4cb1cfb2e437201bb4.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <p>We can see in the plots above that the RMS is fairly large at about 0.5 pixels. This is generally considered a poor fit, with the desired RMS being &lt; 0.1 pixels depending on the number of sources. This is likely because the SDSS astrometric precision is insufficient for a high-quality HST alignment. One approach would be to align the first image to SDSS and then align the remaining HST images to one another. This would improve both the absolute and relative alignment of the individual frames.</p>
 <p><a id="gaia_align"></a></p>
 </section>
 <section id="gaia-alignment">
-<h3>3.3 Gaia Alignment<a class="headerlink" href="#gaia-alignment" title="Permalink to this heading">#</a></h3>
+<h3>3.3 Gaia Alignment<a class="headerlink" href="#gaia-alignment" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">refcat</span> <span class="o">=</span> <span class="s1">&#39;gaia.cat&#39;</span>
@@ -1188,8 +1188,10 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/6f199b1cc42f018213761c9f5a8589237669db71a709f7cd056ef7845f61c631.png" src="../../../_images/6f199b1cc42f018213761c9f5a8589237669db71a709f7cd056ef7845f61c631.png" />
-<img alt="../../../_images/3b6092395e0c5dbe8d4fcc704c384dc48164d9c69d72abd290bc583e5244a73d.png" src="../../../_images/3b6092395e0c5dbe8d4fcc704c384dc48164d9c69d72abd290bc583e5244a73d.png" />
+<a class="reference internal image-reference" href="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png"><img alt="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png" src="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png" style="width: 728px; height: 455px;" />
+</a>
+<a class="reference internal image-reference" href="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png"><img alt="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png" src="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png" style="width: 581px; height: 476px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1209,7 +1211,7 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 <p><a id="fit_quality_gaia"></a></p>
 </section>
 <section id="id1">
-<h3>3.4 Inspect the shift file and fit residuals<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>3.4 Inspect the shift file and fit residuals<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>We can similarly look at the shift file from alignment to the Gaia catalog. As expected, the Gaia catalog does quite a bit better, with rms residuals ~0.05 pixels.</p>
 <p>The columns are: Filename, X Shift [pixels], Y Shift [pixels], Rotation [degrees], Scale, X RMS [pixels], Y RMS [pixels]</p>
 <div class="cell docutils container">
@@ -1227,12 +1229,12 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743282870928" class="table-striped table-bordered table-condensed">
+<table id="table140547247463248" class="table-striped table-bordered table-condensed">
 <thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
 <thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>ibwb01xrq_flc.fits</td><td>-0.22</td><td>0.10</td><td>0.000</td><td>1.00000</td><td>0.03</td><td>0.05</td></tr>
-<tr><td>ibwb01xxq_flc.fits</td><td>-0.21</td><td>0.10</td><td>0.000</td><td>1.00000</td><td>0.03</td><td>0.05</td></tr>
 <tr><td>ibwb01xqq_flc.fits</td><td>-0.22</td><td>0.10</td><td>360.000</td><td>1.00000</td><td>0.03</td><td>0.03</td></tr>
+<tr><td>ibwb01xxq_flc.fits</td><td>-0.21</td><td>0.10</td><td>0.000</td><td>1.00001</td><td>0.03</td><td>0.05</td></tr>
+<tr><td>ibwb01xrq_flc.fits</td><td>-0.22</td><td>0.11</td><td>0.000</td><td>1.00000</td><td>0.03</td><td>0.05</td></tr>
 </table></div></div></div>
 </div>
 <p>Print the Number of Gaia Matches per image from the TweakReg output.</p>
@@ -1251,9 +1253,9 @@ in the F606W filter acquired in Visit 01. The three FLC images have been process
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ibwb01xqq: Number of Gaia Matches = 565
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ibwb01xqq: Number of Gaia Matches = 564
 ibwb01xrq: Number of Gaia Matches = 567
-ibwb01xxq: Number of Gaia Matches = 538
+ibwb01xxq: Number of Gaia Matches = 546
 </pre></div>
 </div>
 </div>
@@ -1267,15 +1269,15 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table139743545333264" class="table-striped table-bordered table-condensed">
+<table id="table140547476700496" class="table-striped table-bordered table-condensed">
 <thead><tr><th>filename</th><th>DETECTOR</th><th>EXPTIME</th><th>WCSNAME</th><th>NMATCHES</th><th>RMS_RA</th><th>RMS_DEC</th><th>RMS_RA_pix</th><th>RMS_DEC_pix</th></tr></thead>
 <thead><tr><th>str18</th><th>str4</th><th>float64</th><th>str30</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>ibwb01xqq_flc.fits</td><td>UVIS</td><td>30.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>442</td><td>1.3</td><td>1.5</td><td>0.03</td><td>0.04</td></tr>
-<tr><td>ibwb01xrq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>462</td><td>4.0</td><td>3.8</td><td>0.1</td><td>0.1</td></tr>
-<tr><td>ibwb01xxq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>429</td><td>3.9</td><td>3.7</td><td>0.1</td><td>0.09</td></tr>
+<tr><td>ibwb01xqq_flc.fits</td><td>UVIS</td><td>30.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>435</td><td>2.4</td><td>2.3</td><td>0.06</td><td>0.06</td></tr>
+<tr><td>ibwb01xrq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>456</td><td>3.6</td><td>3.2</td><td>0.09</td><td>0.08</td></tr>
+<tr><td>ibwb01xxq_flc.fits</td><td>UVIS</td><td>360.0</td><td>IDC_2731450pi-FIT_IMG_GAIAeDR3</td><td>429</td><td>3.9</td><td>3.8</td><td>0.1</td><td>0.1</td></tr>
 </table></div></div></div>
 </div>
-<p><b>The new Gaia solution looks better than the MAST solution, so we rerun <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> below and update the image headers with the new WCS solution.<b></p>
+<p><b>The new Gaia solution looks better than the MAST solution, so we rerun <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> below and update the image headers with the new WCS solution.</b></p>
 <p>For more details on absolute astrometry in HST images, see <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac/chapter-4-astrometric-information-in-the-header/4-5-absolute-astrometry">Section 4.5</a> in the DrizzlePac Handbook. Show the astrometric residual plots:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1284,7 +1286,8 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/4fc65b20149bbfe69c878f3d3f0b78239fabe2a5b5096c8a63499d02d1c4bff1.png" src="../../../_images/4fc65b20149bbfe69c878f3d3f0b78239fabe2a5b5096c8a63499d02d1c4bff1.png" />
+<a class="reference internal image-reference" href="../../../_images/7bb3ded48bac862aa0da656e4ded767e3da124dce753e205e1eb965d12a30a39.png"><img alt="../../../_images/7bb3ded48bac862aa0da656e4ded767e3da124dce753e205e1eb965d12a30a39.png" src="../../../_images/7bb3ded48bac862aa0da656e4ded767e3da124dce753e205e1eb965d12a30a39.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1294,7 +1297,8 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/02838eff4c937c48c599cd1990e6a9e2a893572ac08e45949a091515381dcc4a.png" src="../../../_images/02838eff4c937c48c599cd1990e6a9e2a893572ac08e45949a091515381dcc4a.png" />
+<a class="reference internal image-reference" href="../../../_images/d0510610de9b3ca08be3564b027e5ba695adcad3c8a28566d0d55b85936dd352.png"><img alt="../../../_images/d0510610de9b3ca08be3564b027e5ba695adcad3c8a28566d0d55b85936dd352.png" src="../../../_images/d0510610de9b3ca08be3564b027e5ba695adcad3c8a28566d0d55b85936dd352.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1304,13 +1308,14 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/5255dfa5488032b2863efe3d40aebab09e8005c4ec515f5da3e1f0ae24ec032f.png" src="../../../_images/5255dfa5488032b2863efe3d40aebab09e8005c4ec515f5da3e1f0ae24ec032f.png" />
+<a class="reference internal image-reference" href="../../../_images/eaae243072fc3f6f76324004504a6b3122d6821bb0f823d6baf5d64af1284baf.png"><img alt="../../../_images/eaae243072fc3f6f76324004504a6b3122d6821bb0f823d6baf5d64af1284baf.png" src="../../../_images/eaae243072fc3f6f76324004504a6b3122d6821bb0f823d6baf5d64af1284baf.png" style="width: 500px; height: 300px;" />
+</a>
 </div>
 </div>
 <p><a id="overplot"></a></p>
 </section>
 <section id="overplot-matched-sources-on-the-image">
-<h3>3.5 Overplot Matched Sources on the Image<a class="headerlink" href="#overplot-matched-sources-on-the-image" title="Permalink to this heading">#</a></h3>
+<h3>3.5 Overplot Matched Sources on the Image<a class="headerlink" href="#overplot-matched-sources-on-the-image" title="Link to this heading">#</a></h3>
 <p>Now, let’s plot the sources that were matched between all images on the “bottom” UVIS chip. This is referred to as chip 2 or SCI, 1 or extension 1.  The cell below reads in the <code class="docutils literal notranslate"><span class="pre">*_fit.match</span></code> file as an <code class="docutils literal notranslate"><span class="pre">astropy</span></code> table. Unfortunately, it doesn’t automatically name columns so we look at the header to grab the columns.</p>
 <p>To verify that TweakReg obtained an acceptable fit between matched source catalogs, it is useful to inspect the results before updating the image header WCS. In the figure below, sources that are matched with Gaia are overplotted on one of the input FLC frames with the two chips merged together.</p>
 <p>It can be useful to check that <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> locked onto stars and not hot pixels or other detector artifacts before proceeding to update the image header.</p>
@@ -1342,13 +1347,14 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/b88d6023ba22b7ea5c58eee4f31e0bc76fac42b7d2ecc25167bd3207869cf8aa.png" src="../../../_images/b88d6023ba22b7ea5c58eee4f31e0bc76fac42b7d2ecc25167bd3207869cf8aa.png" />
+<a class="reference internal image-reference" href="../../../_images/5d5553f2707357536f4a175a07159eb09a99596e214785a87978c5a3d53a3117.png"><img alt="../../../_images/5d5553f2707357536f4a175a07159eb09a99596e214785a87978c5a3d53a3117.png" src="../../../_images/5d5553f2707357536f4a175a07159eb09a99596e214785a87978c5a3d53a3117.png" style="width: 851px; height: 847px;" />
+</a>
 </div>
 </div>
 <p><a id="updatehdr"></a></p>
 </section>
 <section id="update-header-with-optimal-parameters">
-<h3>3.6 Update header with optimal parameters<a class="headerlink" href="#update-header-with-optimal-parameters" title="Permalink to this heading">#</a></h3>
+<h3>3.6 Update header with optimal parameters<a class="headerlink" href="#update-header-with-optimal-parameters" title="Link to this heading">#</a></h3>
 <p>Once you’ve decided on the optimal set of parameters for your alignment, it is safe to update the header of the input data, (assuming that the new solution is better than the MAST alignment.) To apply these transformations to the image, we simply need to run TweakReg the same as before, but set the parameter <code class="docutils literal notranslate"><span class="pre">updatehdr</span></code> equal to <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1375,17 +1381,19 @@ ibwb01xxq: Number of Gaia Matches = 538
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/6f199b1cc42f018213761c9f5a8589237669db71a709f7cd056ef7845f61c631.png" src="../../../_images/6f199b1cc42f018213761c9f5a8589237669db71a709f7cd056ef7845f61c631.png" />
-<img alt="../../../_images/3b6092395e0c5dbe8d4fcc704c384dc48164d9c69d72abd290bc583e5244a73d.png" src="../../../_images/3b6092395e0c5dbe8d4fcc704c384dc48164d9c69d72abd290bc583e5244a73d.png" />
+<a class="reference internal image-reference" href="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png"><img alt="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png" src="../../../_images/2f16dc1fca5f500e631e1c28385cb7d6a4ae368109d77d9377352e6f05a69ccf.png" style="width: 728px; height: 455px;" />
+</a>
+<a class="reference internal image-reference" href="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png"><img alt="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png" src="../../../_images/efadcf7d9d31eed9f25753b7ec2c3c230807142387d920f47e00780a2a8d1872.png" style="width: 581px; height: 476px;" />
+</a>
 </div>
 </div>
 <p><a id="adriz"></a></p>
 </section>
 </section>
 <section id="combine-the-images-using-astrodrizzle">
-<h2>4. Combine the Images using <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code><a class="headerlink" href="#combine-the-images-using-astrodrizzle" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
-<p>While the three sets of FLC files are now aligned, in this example we drizzle together only the two long exposures. When exposures are very different lengths, drizzling them together doesn’t work well when ‘EXP’ weighting is used. For objects that saturate in the long exposures, the problem occurs at the boundary where the signal transitions from only being present in short exposures near the core to being present at larger radii in the longer exposures. The result is a discontinuity in the PSF radial profile and a resulting flux that is too low in some regions. <b>For photometry of saturated objects, the short exposures should be drizzled separately from the long exposures.<b></p>
+<h2>4. Combine the Images using <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code><a class="headerlink" href="#combine-the-images-using-astrodrizzle" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
+<p>While the three sets of FLC files are now aligned, in this example we drizzle together only the two long exposures. When exposures are very different lengths, drizzling them together doesn’t work well when ‘EXP’ weighting is used. For objects that saturate in the long exposures, the problem occurs at the boundary where the signal transitions from only being present in short exposures near the core to being present at larger radii in the longer exposures. The result is a discontinuity in the PSF radial profile and a resulting flux that is too low in some regions. <b>For photometry of saturated objects, the short exposures should be drizzled separately from the long exposures.</b></p>
 <p>Next, we combine the images through drizzling, and retrieve some recommended values for this process from the MDRIZTAB reference file.  The parameters in this file are different for each detector and are based on the number of input frames. These are a good starting point for drizzling and may be adjusted based on your science goals.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1403,18 +1411,13 @@ ibwb01xxq: Number of Gaia Matches = 538
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Searching for the MDRIZTAB file: ubi1853qi_mdz.fits
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  Symbolic context &#39;hst-latest&#39; resolves to &#39;hst_1211.pmap&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  Symbolic context &#39;hst-latest&#39; resolves to &#39;hst_1294.pmap&#39;
 CRDS - INFO -  Reorganizing 0 references from &#39;instrument&#39; to &#39;flat&#39;
 CRDS - INFO -  Reorganizing from &#39;instrument&#39; to &#39;flat&#39; cache,  removing instrument directories.
 CRDS - INFO -  Syncing explicitly listed files.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  Fetching  ./crds_cache/references/hst/wfc3/ubi1853qi_mdz.fits       95.0 K bytes  (1 / 1 files) (0 / 95.0 K bytes)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  0 errors
+CRDS - INFO -  0 errors
 CRDS - INFO -  0 warnings
-CRDS - INFO -  5 infos
+CRDS - INFO -  4 infos
 </pre></div>
 </div>
 </div>
@@ -1452,9 +1455,7 @@ CRDS - INFO -  5 infos
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- MDRIZTAB: AstroDrizzle parameters read from row 2.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Outputting the following parameters:
+Outputting the following parameters:
 driz_sep_bits 96
 combine_type minmed
 driz_cr_snr 3.5 3.0
@@ -1514,29 +1515,30 @@ final_bits 96
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Y (pixels)&#39;)
 </pre></div>
 </div>
-<img alt="../../../_images/1f9e27aee985dbbeb7c3c1c58e3decee607af46e22c6636f9cd02119a57d596f.png" src="../../../_images/1f9e27aee985dbbeb7c3c1c58e3decee607af46e22c6636f9cd02119a57d596f.png" />
+<a class="reference internal image-reference" href="../../../_images/bddd540545ae4c2a2eca4555502a261b174ecee8569427ac27ac48ef0edb75ea.png"><img alt="../../../_images/bddd540545ae4c2a2eca4555502a261b174ecee8569427ac27ac48ef0edb75ea.png" src="../../../_images/bddd540545ae4c2a2eca4555502a261b174ecee8569427ac27ac48ef0edb75ea.png" style="width: 1634px; height: 1183px;" />
+</a>
 </div>
 </div>
 <p>For more details on inspecting the drizzled products after reprocessing, see <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac/chapter-7-data-quality-checks-and-trouble-shooting-problems/7-3-inspecting-drizzled-products-after-user-reprocessing">Section 7.3</a> in the DrizzlePac Handbook.</p>
 <p><a id="conclude"></a></p>
 </section>
 <section id="conclusions">
-<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>Many other services have interfaces for querying catalogs that can also be used to align HST images.  In general, Gaia works very well for HST due to its high precision, but can have a low number of sources in some regions, especially at high galactic latitudes.  Aligning images to an absolute frame provides a way to make data comparable across many epochs/detectors/observatories, and in many cases, makes the alignment easier to complete.</p>
 <p><a id="about"></a></p>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Created: 14 Dec 2018;     V. Bajaj
-Updated: 03 Jul 2024;     M. Revalski, V. Bajaj, &amp; J. Mack
+Updated: 27 May 2025;     M. Revalski, V. Bajaj, &amp; J. Mack
 </pre></div>
 </div>
 <p><strong>Source:</strong> GitHub <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks">spacetelescope/hst_notebooks</a></p>
 <p><a id="add"></a></p>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h2>
 <p>Below are some additional resources that may be helpful. Please send any questions through the <a class="reference external" href="https://stsci.service-now.com/hst">HST Help Desk</a>, selecting the DrizzlePac category.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.stsci.edu/hst/instrumentation/wfc3">WFC3 Website</a></p></li>
@@ -1546,7 +1548,7 @@ Updated: 03 Jul 2024;     M. Revalski, V. Bajaj, &amp; J. Mack
 <p><a id="cite"></a></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use Python packages such as <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, <code class="docutils literal notranslate"><span class="pre">drizzlepac</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the authors.</p>
 <p>Follow these links for more information about citing various packages:</p>
 <ul class="simple">
@@ -1556,9 +1558,9 @@ Updated: 03 Jul 2024;     M. Revalski, V. Bajaj, &amp; J. Mack
 <li><p><a class="reference external" href="https://matplotlib.org/stable/users/project/citing.html">Citing <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></p></li>
 <li><p><a class="reference external" href="https://numpy.org/citing-numpy/">Citing <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></p></li>
 </ul>
-<hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
-<a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
+<hr>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
+<a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/hst_notebooks/main/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/hst_notebooks/main/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 </section>
 </section>
 

@@ -1,10 +1,9 @@
-WFC3 Notebooks
-==============
+# WFC3 Notebooks
 
 WFC3 Notebooks is the primary repository for analyzing data from the 
 [Wide Field Camera 3](https://www.stsci.edu/hst/instrumentation/wfc3) on the 
 Hubble Space Telescope. The Jupyter notebooks include tools for general data analysis, 
-WFC3/IR time variable background (TVB), photometry, and point spread function (PSF) modeling. This repository contains the 
+WFC3/IR time variable background (TVB), photometry and point spread function (PSF) modeling. This repository contains the 
 complementary notebooks mentioned in the [WFC3 Data Handbook](https://hst-docs.stsci.edu/wfc3dhb).
 These notebooks include:
 
@@ -13,6 +12,7 @@ General Tools:
 - [Exception Report Checklist - WFC3](https://spacetelescope.github.io/hst_notebooks/notebooks/WFC3/exception_report/wfc3_exception_report.html)
 - [Processing WFC3/UVIS Data with `calwf3` Using the v1.0 CTE-Correction](https://spacetelescope.github.io/hst_notebooks/notebooks/WFC3/calwf3_v1.0_cte/calwf3_with_v1.0_PCTE.html)
 - [Masking Persistence in WFC3/IR Images](https://spacetelescope.github.io/hst_notebooks/notebooks/WFC3/persistence/wfc3_ir_persistence.html)
+- [Analyzing WFC3/UVIS G280 Exoplanet Transit Observations](https://spacetelescope.github.io/hst_notebooks/notebooks/WFC3/uvis_g280_transit/G280_Exoplanet_Transits.html)
 
 WFC3/IR Time Variable Background (TVB):
 - [WFC3/IR IMA Visualization Tools with an Example of Time Variable Background](https://spacetelescope.github.io/hst_notebooks/notebooks/WFC3/ir_ima_visualization/IR_IMA_Visualization_with_an_Example_of_Time_Variable_Background.html)
@@ -39,44 +39,13 @@ See the [WFC3 Instrument Handbook](https://hst-docs.stsci.edu/wfc3ihb),
 [WFC3 Software Tools](https://www.stsci.edu/hst/instrumentation/wfc3/software-tools)
 for more information on instrumentation, data, calibration, and software.
 
-Installation
-------------
+## Before Running a Notebook
 
-It is recommended to clone the entire repository. To do so, run the following
-command in terminal:
+Before running these examples, you **must** follow the general instructions on creating an environment that can run the notebooks, shown in STScI HST Notebook Repository HQ page under [**Installation Instructions**](https://spacetelescope.github.io/hst_notebooks/index.html).
 
-```
-git clone https://github.com/spacetelescope/hst_notebooks
-```
+## Contributing
 
-`stenv` is the preferred base virtual environment for running WFC3 Noteboks since 
-it contains libraries necessary for processing and analyzing data from the Hubble 
-Space Telescope (HST) and the James Webb Space Telescope (JWST). To install, see 
-[stenv readthedocs](https://stenv.readthedocs.io/en/latest/) or 
-[stenv GitHub](https://github.com/spacetelescope/stenv). 
-
-In addition, each notebook contains a `requirements.txt` file that needs to be
-installed before running the notebooks. Some notebooks contain a `pre-requirements.sh`
-file, usually to install [HSTCAL](https://github.com/spacetelescope/hstcal), which
-is the calibration software for HST. Here is a common set of commands to run 
-before executing the notebooks (assuming your virtual environment is activated):
-
-```
-bash pre-requirements.sh
-pip install -r requirements.txt
-pip install notebook
-```
-
-With the environment activated and additional libraries installed based on the
-individual requirement files, you will be able to complete the notebooks.
-
-Contributing
-------------
-
-New contributions and feedback are very welcomed! Please open a new issue or new 
-pull request for bugs, feedback, or new features you would like to see. If there 
-is an issue you would like to work on, please leave a comment and we will be happy 
-to assist. Questions can also be sent through the [HST Help Desk](https://stsci.service-now.com/hst).
+New contributions and feedback are very welcomed! Please open a new [issue](https://github.com/spacetelescope/hst_notebooks/issues) or new pull request for bugs, feedback, or new features you would like to see. If there is an issue you would like to work on, please leave a comment and we will be happy to assist. Questions can also be sent to the WFC3 team through the [HST Help Desk](https://stsci.service-now.com/hst).
 
 WFC3 Notebooks follows the 
 [Astropy Code of Conduct](https://www.astropy.org/code_of_conduct.html)
@@ -89,7 +58,6 @@ the the `astropy`
 and [developer](https://docs.astropy.org/en/stable/index.html#developer-documentation) 
 documentation.
 
-License
--------
+## License
 
 WFC3 Notebooks is licensed under a BSD 3-Clause License (see the `LICENSE.txt` file).
